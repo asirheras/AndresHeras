@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte nombre="Atletismo" />
+    <nombre>Jesse Owens</nombre>
+  </deportista>
+  <deportista>
+    <deporte nombre=" Natación" />
+    <nombre>Mark Spitz</nombre>
+    </deportista>
+</deportistas>
+
+
+
+<!-- ENUNCIADO -->
+<!--?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+  <deportista>
+    <deporte Atletismo />                           FALTA ATRIBUTO
+    <nombre>Jesse Owens</nombre>
+  <deportista>
+    <deporte Natación />                             FALTA ATRIBUTO
+    <nombre>Mark Spitz</nombre>
+  </deportista>
+</deportistas>-->

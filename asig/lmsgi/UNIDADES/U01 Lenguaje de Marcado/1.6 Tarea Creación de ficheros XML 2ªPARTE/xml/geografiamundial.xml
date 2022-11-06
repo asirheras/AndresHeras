@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<geografiamundial> 
+  <pais nombre="España">
+    <pais>España</pais>
+    <continente>Europa</continente>
+    <capital nombre="Madrid"/>
+  </pais>
+</geografiamundial>
+
+<!-- Enunciado 
+<geografia mundial> NO PUEDE HABER ESPACISO EN NOMBRE DE ETIQUETAS
+  <pais>
+    <pais>España</pais> NO PUEDE HABER DOS ETIQUETAS CON EL MISMO NOMBRE
+    <continente>Europa</continente>
+    <capital></capital nombre="Madrid"> LOS ATRIBUTOS TIENE QUE ESTAR EN LA ETIQUETA DE INICIO
+  </pais>
+</geografia mundial > -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+    <email n="1">
+        <remitente>Fran Cuesta</remitente>
+        <destinatario>Felix Rodriguez</destinatario>
+        <asunto>¿Esto que és?</asunto>
+        <cuerpo></cuerpo>
+    </email>
+    <email n="2">
+        <remitente>Fran Cuesta</remitente>
+        <destinatario>Felix Rodriguez</destinatario>
+        <asunto></asunto>
+        <cuerpo></cuerpo>
+    </email>
+    <email n="3">
+        <remitente>Fran Cuesta</remitente>
+        <destinatario>Felix Rodriguez</destinatario>
+        <asunto></asunto>
+        <cuerpo></cuerpo>
+    </email>
+    <email n="4">
+        <remitente>Fran Cuesta</remitente>
+        <destinatario>Felix Rodriguez</destinatario>
+        <asunto></asunto>
+        <cuerpo></cuerpo>
+    </email>
+</emails>

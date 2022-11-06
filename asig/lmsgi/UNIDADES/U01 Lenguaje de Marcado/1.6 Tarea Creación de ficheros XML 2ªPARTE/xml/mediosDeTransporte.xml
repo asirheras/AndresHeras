@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mediosDeTransporte>
+  <bicicleta velocidad="v&lt;100km/h" />
+  <patinete velocidadmaxima="50 km/h"/>
+</mediosDeTransporte>
+
+
+
+<!-- ENUNCIADO-->
+<!--?xml version="1.0" encoding="UTF-8"?> 
+<mediosDeTransporte>
+  <bicicleta velocidad="v<100km/h" />                   EL "<" ES UNA ENTIDAD
+  <patinete velocidad maxima="50 km/h"             ETIQUETA NO CERRADA
+</mediosDeTransporte>-->

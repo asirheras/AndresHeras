@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <categoria id="Autoayuda">
+        <libro>
+            <titulo>El Alquimista</titulo>
+            <autor>Paolo Cohelo</autor>
+        </libro>
+    </categoria>
+    <categoria id="Literatura infantil">
+        <libro>
+            <titulo>El Galeon Hundido</titulo>
+            <autor>Laura Garcia Corella</autor>
+        </libro>
+    </categoria>
+    <categoria id="Novela Historica">
+        <libro>
+            <titulo>Los Pilares de la Tierra</titulo>
+            <autor>Ken Follet</autor>
+        </libro>
+    </categoria>
+</biblioteca>

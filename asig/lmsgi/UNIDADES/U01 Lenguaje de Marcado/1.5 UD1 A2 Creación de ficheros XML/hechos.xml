@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hechos>
+   <hecho descripcion="Descubrimiento de América">
+      <fecha>
+         <dia>12</dia>
+         <mes>10</mes>
+         <año>1492</año>
+      </fecha>
+   </hecho>
+   <hecho descripcion="Bombardeo de Hiroshima">
+      <fecha>
+         <dia>6</dia>
+         <mes>8</mes>
+         <año>1945</año>
+      </fecha>
+   </hecho>
+   <hecho descripcion="La caida del Muro de Berlin">
+      <fecha>
+         <dia>9</dia>
+         <mes>11</mes>
+         <año>1989</año>
+      </fecha>
+   </hecho>
+</hechos>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Udestinatario-8"?>
+<hojadecalculo>
+    <fila1>
+        <idempleado></idempleado>
+        <apellido></apellido>
+        <nombre></nombre>
+        <seccional></seccional>
+        <facultad></facultad>
+        <cargo></cargo>
+        <salario></sarario>
+    </fila1>
+    <fila2>
+        <idempleado></idempleado>
+        <apellido></apellido>
+        <nombre></nombre>
+        <seccional></seccional>
+        <facultad></facultad>
+        <cargo></cargo>
+        <salario></sarario>
+    </fila2>
+    <fila3>
+        <idempleado></idempleado>
+        <apellido></apellido>
+        <nombre></nombre>
+        <seccional></seccional>
+        <facultad></facultad>
+        <cargo></cargo>
+        <salario></sarario>
+    </fila3>
+</hojadecalculo>

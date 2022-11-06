@@ -1,0 +1,181 @@
+/*Hoja de estilos de actividades*/
+/*Colores elegidos de  COLORMIND:
+#29be09
+#7bdb1f
+#7ac8c0
+#d6e6e8*/
+* {
+  background-color: #87a98e, #d6e6e8, #7ac8c0, #7bdb1f, #29be09;
+}
+
+
+/*Estilos generales*/
+* {
+  /* Restablecer el margen y el espacido interno de la hoja*/
+  margin: 0;
+  padding: 0;
+  /*Restablecer el modelo de caja de todos los elementos HTML*/
+  box-sizing: border-box;
+  /*http:\\mzl.la/3lAK8ok*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300&display=swap");
+
+body {
+  margin: 0em;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  /*El body ocupará el 100% del viewport*/
+  width: 100vw;
+  height: 100vw;
+}
+
+h1{
+  padding: 50px;
+}
+header {
+  background-color: #d6e6e8;
+  position: relative;
+}
+section h2 {
+  background-color: #29be09;
+  color: white;
+}
+/*Menú del tema*/
+
+nav {
+  text-align: center;
+}
+nav a {
+  /*text-align: center;*/
+  text-decoration: none;
+  color: inherit;
+}
+.centro ul li {
+  text-align: center;
+}
+
+section nav li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: greenyellow;
+  color: grey;
+}
+nav li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  background-color: #29be09;
+  color: grey;
+}
+pre {
+  font-family: monospace;
+}
+
+footer {
+  text-align: center;
+  background-color: #7ac8c0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  background-color: #616161;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border-right: 1px solid #fff;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+/*--- Ponemos un display flex para hacer el menu responsivo*/
+.menu ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 2 vw;
+  border-right: 1px solid #fff;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+article {
+  justify-content:space-around;
+  width: 90%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /*border:3px solid #7bdb1f;*/
+ /* border-radius:15px;*/
+  /*background-color:#616161;*/
+}
+article p {
+
+}
+
+.p {
+  background-color: #7ac8c0;
+  padding: 20px 10px 50px 20px;
+  border-left:2px solid #7bdb1f;
+}
+
+
+/* ----------------- EN EL SMARTPHONE------*/
+@media (max-width: 768px) {
+  header label {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    background: #616161;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 0.5s;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li {
+    border-top: 1px solid #fff;
+  }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+  <mundial>
+    <pais nombre="España" />
+    <año fecha="1982" />
+  </mundial>
+</mundiales-de-futbol>
+
+
+<!-- ENUNCIADO-->
+<!--?xml version="1.0" encoding="UTF-8"?>
+<mundiales-de-futbol>
+  <mundial>
+    <pais="España" />           FALTA EL ATRIBUTO
+    <1982/>                               FALTA LA ETIQUETA  Y EL ATRIBUTO
+  </mundial>
+</mundiales-de-futbol>-->

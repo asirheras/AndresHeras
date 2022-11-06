@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ciudades>
+    <ciudad>
+<nombre>Madrid</nombre>
+    <pais cont="Europa">España</pais>
+    <habitantes>3305408</habitantes>
+    <ubicacion>40°25′00″N 3°42′09″O</ubicacion>
+</ciudad>
+<ciudad>
+<nombre>Yibuti</nombre>
+    <pais cont="Africa">República de Djibouti</pais>
+    <habitantes>957273</habitantes>
+    <ubicacion>11°35′42″N 43°08′53″E</ubicacion>
+</ciudad>
+<ciudad>
+<nombre>Daca</nombre>
+    <pais cont="Asia">Bangladesh</pais>
+    <habitantes>29456000 </habitantes>
+    <ubicacion>23°43′44″N 90°23′40″E</ubicacion>
+</ciudad>
+</ciudades>

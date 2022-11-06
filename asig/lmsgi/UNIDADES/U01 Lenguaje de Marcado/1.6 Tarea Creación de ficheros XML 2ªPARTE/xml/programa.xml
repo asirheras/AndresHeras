@@ -1,0 +1,14 @@
+﻿<programas>
+  <programa nombre="Firefox" licencia="GPL,MPL" />
+  <programa nombre="OpenOffice.org" licencia="LGPL "/>
+  <programa nombre="Inkscape" licencia="GPL" />
+</programas>
+
+
+<!-- ENUNCIADO -->
+<!-- ?xml version="1.0" encoding="UTF-8"?-->
+<!--<programas>
+  <programa nombre="Firefox" licencia="GPL" licencia="MPL" /> NO PUEDE REPERTIRSE EL ATRIBUTO
+  <programa nombre="OpenOffice.org" licencia=LGPL /> HAY QUE ENTRECOMILLAR EL VALOR DEL ATRIBUTO
+  <programa nombre="Inkscape" licencia="GPL" />
+</programas> -->

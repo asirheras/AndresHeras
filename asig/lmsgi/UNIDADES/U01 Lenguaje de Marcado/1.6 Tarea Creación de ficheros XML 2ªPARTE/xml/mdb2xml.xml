@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <Data name="usuarios">
+<Row>
+<ID>1</ID>
+<Alias>Africa</Alias>
+<Apellidos>AROCAS PASADAS</Apellidos>
+<Nombre>ESTEFANIA</Nombre>
+<Direccin>PADRÓ , 109</Direccin>
+<Poblacin>Zaragoza</Poblacin>
+<Telfono>938205580</Telfono>
+<Mvil>546212121</Mvil>
+<Email>africaQaltecom.es</Email>
+<Observaciones></Observaciones>
+<Sexo> Mujer</Sexo>
+<FechaNacimiento>18/03/1964 0:00:00</FechaNacimiento>
+<EstadoCivil>Otros</EstadoCivil>
+<Hijos>1</Hijos>
+<Desempleado>False</Desempleado>
+<Profesin>Administrativo/a</Profesin>
+<Profesin>Administrativo/a</Profesin>
+<Nivelacadmico>Bachillerato</Nivelacadmico>
+<Lenguausual>catalán</Lenguausual>
+<Ingresosmensuales>1500</Ingresosmensuales>
+<Ahorros></Ahorros>
+<PesoKg>73</PesoKg>
+<Altura>1,62</Altura>
+<Cabello>Castaño</Cabello>
+<Ojos>Marrones</Ojos>
+<Fumador> True</Fumador>
+<Salud>Buena</Salud>
+<Aficin1>Cine</Aficin1>
+<Aficin2>TV</Aficin2>
+<Caracterstica1>Sencillez</Caracterstica1>
+<Caracterstica2>Ternura</Caracterstica2>
+<Valora1>Buen Humor</Valora1>
+<Valora2>Realismo</Valora2>
+<Fobias></Fobias>
+<Sexualidad>Bisexual </Sexualidad>
+<Disponible>False</Disponible>
+</Row>
+
+
+<Row>
+<ID>2</ID>
+<Alias>Agata</Alias>
+<Apellidos>VISO GILABERT</Apellidos>
+<Nombre>QUERALT</Nombre>
+<Direccin>CASA CORDELLAS</Direccin>
+<Poblacin>Barcelona</Poblacin>
+<Telfono>936545115</Telfono>
+<Mvil>625215452</Mvil>
+<Email>agata@hotmail.com</Email>
+<Observaciones></Observaciones>
+<Sexo> Mujer</Sexo>
+<FechaNacimiento>11/12/1965 0:00:00</FechaNacimiento>
+<EstadoCivil>Otros</EstadoCivil>
+<Hijos>0</Hijos>
+<Desempleado>True</Desempleado>
+<Profesin>Delineante</Profesin>
+<Nivelacadmico>EGB</Nivelacadmico>
+<Lenguausual>castellano</Lenguausual>
+<Ingresosmensuales>1100</Ingresosmensuales>
+<Ahorros>113000</Ahorros>
+<PesoKg>98</PesoKg>
+<Altura>1,55</Altura>
+<Cabello>Negro</Cabello>
+<Ojos>Marrones</Ojos>
+<Fumador> False</Fumador>
+<Salud>Regular</Salud>
+<Aficin1>Caminar</Aficin1>
+<Aficin2>Música</Aficin2>
+<Caracterstica1>Sencillez</Caracterstica1>
+<Caracterstica2>Sinceridad</Caracterstica2>
+<Valora1>Serenidad</Valora1>
+<Valora2>Buen humor</Valora2>
+<Fobias></Fobias>
+<Sexualidad>Heterosexual </Sexualidad>
+<Disponible>True</Disponible>
+</Row>
+
+<Row>
+<ID>3</ID>
+<Alias>Aguador</Alias>
+<Apellidos>AYALA FERRERAS</Apellidos>
+<Nombre>JOAN</Nombre>
+<Direccin>DOCTOR FLEMING, 11</Direccin>
+<Poblacin>Zaragoza</Poblacin>
+<Telfono>938202768</Telfono>
+<Mvil>649212123</Mvil>
+<Email></Email>
+<Observaciones></Observaciones>
+<Sexo>Hombre</Sexo>
+<FechaNacimiento>19/07/1969 0:00:00</FechaNacimiento>
+<EstadoCivil>Otros</EstadoCivil>
+<Hijos>0</Hijos>
+<Desempleado>False</Desempleado>
+<Profesin></Profesin>
+<Nivelacadmico>Diplomado/a</Nivelacadmico>
+<Lenguausual>castellano</Lenguausual>
+<Ingresosmensuales>1500</Ingresosmensuales>
+<Ahorros>113000</Ahorros>
+<PesoKg>61</PesoKg>
+<Altura>1,6</Altura>
+<Cabello>Negro</Cabello>
+<Ojos>Otro</Ojos>
+<Fumador> True</Fumador>
+<Salud>Buena</Salud>
+<Aficin1>Música</Aficin1>
+<Aficin2>Cine</Aficin2>
+<Caracterstica1>Sinceridad</Caracterstica1>
+<Caracterstica2>Realismo</Caracterstica2>
+<Valora1>Buen Humor</Valora1>
+<Valora2>Ternura</Valora2>
+<Fobias></Fobias>
+<Sexualidad>No declarada </Sexualidad>
+<Disponible>False</Disponible>
+</Row>
+</Data>

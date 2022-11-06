@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg824"
+   width="181"
+   height="406.4856"
+   viewBox="0 0 181 406.48559"
+   sodipodi:docname="logverde.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\xampp\htdocs\web\images\logoverde.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs828" />
+  <sodipodi:namedview
+     id="namedview826"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="true"
+     inkscape:zoom="1.2863955"
+     inkscape:cx="18.656782"
+     inkscape:cy="113.10674"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g830">
+    <inkscape:grid
+       type="xygrid"
+       id="grid40386"
+       originx="-44.5"
+       originy="-4.306287" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g830"
+     transform="translate(-44.5,-4.3062871)">
+    <path
+       style="fill:#87a98e;fill-opacity:1;stroke:#87a98e;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 45,325 V 75 c 36.666667,13.333333 111.29295,40.47016 110,40 V 215 H 120 V 140 L 80,125 v 215 z"
+       id="path860"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#7bdb1b;fill-opacity:0.67450982;stroke:#7bdb1b;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.67450982"
+       d="m 120,240 h 35 v 100 l 70,35 v 35 L 120,360 Z"
+       id="path862"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#29be09;fill-opacity:1;stroke:#29be09;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 190,90 v 235 l 35,15 V 65 L 45,5 v 35 z"
+       id="path1236"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>

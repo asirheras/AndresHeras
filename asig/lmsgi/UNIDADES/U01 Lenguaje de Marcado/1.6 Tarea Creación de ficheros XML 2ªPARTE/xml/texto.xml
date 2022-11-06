@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <titulo>XML explicado a los niños</titulo> <!-- XML es CASE SENSITIVE-->
+  <párrafo>El <abreviatura>XML</abreviatura>define cómo crear
+  lenguajes de marcas.</párrafo>
+  <párrafo>Las marcas se añaden a un documento de texto
+  para añadir información.</párrafo>
+  <http>www.example.org</http> <!-- NOMENCLATURA-->
+</texto>
+
+<!--Enunciado-->
+<!--?xml version="1.0" encoding="UTF-8"?>
+<texto>
+  <Titulo>XML explicado a los niños</titulo>            ETIQUETA DIFERENTE
+  <párrafo>El <abreviatura>XML</abreviatura>define cómo crear        NO SE PUEDE PONER SIGNOS DE PUNTUACIÓN
+  lenguajes de marcas.</párrafo>
+  <párrafo>Las marcas se añaden a un documento de texto
+  para añadir información.</párrafo>                          NO SE PUEDE PONER SIGNOS DE PUNTUACIÓN
+  <http://>www.example.org</http://>                      NO SE PUEDE PONER SIGNOS DE PUNTUACIÓN
+</texto> -->

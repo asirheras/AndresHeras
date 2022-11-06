@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrés Heras">
+    <meta name="description" content="Mi primera página web">
+    <title>Mi primera pagina web</title>
+</head>
+
+<body>
+
+    <h1>UD2 A1 Mi primera página Web</h1>
+
+    <!--etiqueta parrafo (p)-->
+    <h2>
+        <u>Parrafos: ETIQUETA&lt;p></u>
+    </h2>
+    <p>Si queremos escribir un párrafo en HTML tenemos que encerrar el parrafo que queremos mostrar con la etiqueta
+        &lt;p> de esta forma</p>
+
+    <p style="background-color: rgb(236, 229, 229);"><b>&lt;p></b>Lorem ipsum, dolor sit amet consectetur
+        adipisicing
+        elit.
+        Officia perspiciatis laboriosam numquam, cupiditate
+        quas
+        dolorem voluptas excepturi perferendis similique?
+        Quibusdam natus maiores magni eaque saepe porro architecto
+        nisi ut
+        odio?<b>&lt;/p></b></p>
+
+    <p>Y en el navegador nos lo presentará de la siguiente manera:</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Officia perspiciatis laboriosam numquam, cupiditate
+        quas
+        dolorem voluptas excepturi perferendis similique? Quibusdam natus maiores magni eaque saepe porro architecto
+        nisi ut
+        odio?</p>
+
+    <!-- etiqueta br -->
+
+    <h2>
+        <u>Saltos de Línea: ETIQUETA&lt;br/></u>
+    </h2>
+
+    <p>Los navegadores NO respetan los saltos de líneas puestos dentro de la etiqueta &lt;p>. Para aplicar un salto de
+        linea, hay que añadir la etiqueta etiqueta &lt;br/> donde se quiera insertar el salto.
+        Vea el siguiente ejemplo:</p>
+    <ul>
+        <li>
+            <p>texto <strong><u>SIN saltos</u> de línea</strong>:</p>
+            <p>&lt;p>En un lugar de la Mancha, cuyo nombre no quiero acordame, vivía un viejo hidalgo &lt;p></p>
+        </li>
+
+        <li>
+            <p>texto <strong><u>CON salto</u> de línea</strong>:</p>
+            <p>&lt;p>"En un lugar de la Mancha,<strong>&lt;br/></strong><br/> 
+                de cuyo nombre no quiero acordame,<strong>&lt;br/></strong><br/>
+                 vivía un viejo hidalgo..."&lt;/p></p>
+
+            <p> en el navegador se vería de estar forma:</p>
+            <p style="background-color: rgb(236, 229, 229);">En un lugar de la Mancha,<br/> cuyo nombre no quiero
+                acordame,<br/> vivía un viejo
+                hidalgo...</p>
+        </li>
+    </ul>
+
+
+    <!--ETIQUETA <pre>-->
+
+
+    <h2>
+        <u>Texto preformateado: ETIQUETA&lt;pre></u>
+    </h2>
+
+    <p> Si queremos visulizar un texto como lo hemos escrito en el archivo HTML,
+        usaremos la etiqueta &lt;pre>
+    </p>
+
+    <pre>
+            <strong>&lt;pre></strong>
+                LUNES | MARTES | MIERCOLES | JUEVES | VIERNES
+                ---------------------------------------------
+                100   |     200|        200|     150|    500
+                ---------------------------------------------
+            <strong>&lt;/pre></strong>
+    </pre>
+
+
+    <h2>
+        <u>Encanbezados: ETIQUETAS &lt;h1>,&lt;h2>,...&lt;h6></u>
+    </h2>
+    <p>Los encabezados se usan cuando se quieren añadir un título a un texto, y por defecto, estarán en
+        negrita, <u>con un tamaño mayor que el texto normal y tendrá un salto de línea al principio y al final del
+            mismo.</u>
+        La importancia del título depende del número que acompañe a la h dentro de la etiqueta,
+        y que no podrá ser mayor de 6. Los encabezados serán: </p>
+
+    <h1 title="Se escribe &lt;h1>titulo 1&lt;h1> en el editor">titulo 1</h1>
+    <h2 title="Se escribe &lt;h2>titulo 2&lt;h2> en el editor">titulo 2</h2>
+    <h3 title="Se escribe &lt;h3>titulo 2&lt;h3> en el editor">titulo 3</h3>
+    <h4 title="Se escribe &lt;h4>titulo 2&lt;h4> en el editor">titulo 4</h4>
+    <h5 title="Se escribe &lt;h5>titulo 2&lt;h5> en el editor">titulo 5</h5>
+    <h6 title="Se escribe &lt;h6>titulo 2&lt;h6> en el editor">titulo 6</h6>
+    <h7 title="Ya no tiene formato de encabezado">titulo 7</h7>
+    <br/>
+
+    <!-- etiqueta <hr> -->
+
+    <h2>
+        <u>Linea Horizontal: ETIQUETA&lt;hr></u>
+    </h2>
+    <p>Sirve para delimitar dos
+        partes del documento de forma gráfica con una línea como la siguiente</p>
+    <hr>
+    <p>Este elemento dispone de algunos atributos
+        interesantes como:
+    <ul>
+        <li>
+            <p>
+                <code><b>size=“valor numérico”</b></code>
+            </p>
+            <p>Permite indicar el <strong>grosor</strong> de la línea en cuestión. Por ejemplo si escribimos:</p>
+            <code>&lt;hr size="20"></code>
+            <p>Mostrará la siguiente línea:</p>
+            <hr size="20">
+        </li>
+        <li>
+            <code><b>width=“valor numérico”</b></code>
+
+            <p>Permite indicar el <strong>anchura</strong> de la línea en cuestión. Por ejemplo si escribimos:</p>
+
+                    <p><code>&lt;hr width="10"></code>, mostrará la siguiente línea</p>
+                    <hr width="10">
+
+                    <p>Para <code>&lt;hr width="100"></code> la mostrará así</p>
+                    <hr width="100">
+
+                    <p>Y para <code>&lt;hr width="500"</code>, así:</p>
+      
+                <hr width="500">
+        </li>
+        <li>
+            <p>
+                <code><b>align="left|center|right"</b></code>
+            </p>
+            <p>Permite el la forma de<strong> alinear la barra en la pantalla del navegador</strong>
+                de la línea en cuestión, que por defecto es a la izquierda. En el siguiente
+                ejemplo sea muestra unas líneas de anchura de 500px. Por ejemplo si escribimos:</p>
+            <ul>
+                <li><code>&lt;hr align="left"></code>
+                    <p>Mostrará la línea a la izquierda, de esta manera:</p>
+                    <hr width="500" align="left">
+                </li>
+                <li>
+                    <p>Para <code>&lt;hr align="right"></code>,</p>
+                    <hr width="500" align="right">
+                </li>
+                <li>
+                    <p>y para <code>&lt;hr align="center"</code></p>
+                    <hr width="500" align="center">
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Estos atributos están obsoletos y se recomienda el uso de CSS</p>
+            <p>
+                El atributo <strong>noshade</strong> eliminaba el efecto tridimensional de la barra, pero ya no es
+                soportado en HTML5 por lo
+                si queremos ese efecto habrá que usar CSS.
+            </p>
+    </ul>
+
+    <h2><u>Elemento textual EN LINEA:</u></h2>
+
+    <p> Los anteriores elementos son <strong><u>elementos textuales de bloque</u></strong> porque se distribuyen por la
+        ventana del navegador de <em><u>arriba a abajo</u></em> , es decir, el elemento <em><u>lleva implícito un salto
+                de
+                línea anterior al elemento y otro posterior al mismo</u></em> . Los siguientes elementos son
+        <strong><u>elementos textuales en línea</u></strong>
+        porque la distribución por la ventana del navegador será de
+        <em><u>izquierda a derecha</u></em> en el orden en que aparezcan en el archivo HTML. <strong><u>No tendrán un
+                salto
+                de línea anterior y posterior como los elementos de bloque</u></strong>
+    </p>
+
+    <!-- etiqueta CITE-->
+
+    <h3>Citas textuales: ETIQUETA &lt;cite></h3>
+    <p>
+        Representa una <em><u>cita textual de algo</u></em>, por ejemplo un libro, un trabajo,
+        un poema, una canción, una película, un programa de televisión, un juego, un cuadro, etc.</p>
+    <p>Por ejemplo, si escribimos esto en nuestro editor:</p>
+    &lt;p>Cervantes escribió las obras <strong>&lt;cite></strong>la cueva de
+    Salmanca<strong>&lt;/cite></strong>, <strong>&lt;cite></strong>El Baño de
+    Argel<strong>&lt;/cite></strong> y &<strong>&lt;cite></strong>El
+    retablo de las Maravillas<strong>&lt;/cite></strong>en 1615&lt;/p>
+    <p>Nuestro navegador lo presentará de esta manera:</p>
+    <p style="background-color: rgb(236, 229, 229);">Cervantes escribió las obras <cite>la cueva de
+            Salmanca</cite>, <cite>El Baño de Argel</cite> y <cite>El
+            retablo de las Maravillas</cite> en 1615</p>
+
+    <!-- ENTRECOMILLADO etiqueta <q>-->
+
+    <h3>Citas entrecomillado: ETIQUETA &lt;q></h3>
+    <p> Para <u>citar textualmente</u> una frase o fragmento de texto de
+        alguien.Por ejemplo, si escribimos en el editor el siguiente código:</p>
+    <p>&lt;p>
+    &lt;em>Tim Berners-Lee&lt;&lt;/em> dijo:
+    <strong>&lt;q></strong>Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y —¡ha-la!—
+    la
+    World Wide Web<strong>&lt;/q></strong>
+    </p>
+    <p>El navegador lo interpretará de la siguiente forma:</p>
+    <p style="background-color: rgb(236, 229, 229);">
+        <em>Tim Berners-Lee</em> dijo:
+        <q>Sólo tuve que tomar la idea de hipertexto y conectarlo con las ideas de TCP y DNS y —¡ha-la!— la
+            World Wide Web</q>
+    </p>
+
+    <!-- etiqueta ABBR-->
+
+    <h3>Acrónimos: ETIQUETA &lt;abbr></h3>
+    <p> Son las iniciales de un término compuesto de varias
+        palabras.Por ejemplo, si vemos escribimos en nuestro editor el siguiente código:</p>
+    &lt;p>
+    <strong>&lt;abbr title</strong>="Laughing out loud ó Laugh out loud">LOL<strong>&lt;/abbr></strong>
+    es&lt;q>reírse en voz alta o reírse mucho tiempo&lt;/q>
+    &lt;/p>
+    <p>En el navegador se presentaría de esta manera</p>
+    <p>
+    <p style="background-color: rgb(236, 229, 229);"><abbr title="Laughing out loud ó Laugh out loud">LOL</abbr>
+        es<q>reírse en voz alta o reírse mucho tiempo</q>
+    </p>
+
+    <!-- etiquetas SUB y SUB-->
+
+    <h3>Superíndices y subindices: ETIQUETAS &lt;sup> y &lt;sub></h3>
+    <p>Ambas etiquetas se utilizan para el lenguaje científico. La etiqueta <em>sup</em> representa un
+        <em>superíndice</em> y la
+        etiqueta <em>sub</em> representa un
+        <em>subindice</em>.Vease el siguiente ejemplo, escrito en un editor:
+    </p>
+
+    &lt;p>Los compuestos encontrados en el primer análisis son: Agua
+    (H<strong>&lt;sub></strong>2<strong>&lt;/sub></strong>O) y amoníaco
+    (NH<strong>&lt;sub></strong>3<strong>&lt;/sub></strong>)&lt;/p>
+    <p>La expresión E=mc<strong>&lt;sup></strong>2<strong>&lt;/sup></strong> representa la equivalencia
+        entre masa y energía según &lt;cite>La Teoría de la
+        Relatividad&lt;/cite> de Albert Einstein&lt;/p>
+    <p>El navegador lo interpretaría de la siguiente manera:</p>
+
+    <p style="background-color: rgb(236, 229, 229);">Los compuestos encontrados en el primer análisis son: Agua
+        (H<sub>2</sub>O) y amoníaco (NH<sub>3</sub>)</p>
+    <p style="background-color: rgb(236, 229, 229);">La expresión E=mc<sup>2</sup> representa la equivalencia
+        entre masa y energía según <cite>La Teoría de la
+            Relatividad</cite> de Albert Einstein</p>
+
+    <!-- etiqueta MARK-->
+
+    <h3>Texto resaltado:ETIQUETA &lt;mark></h3>
+
+    <p> Se emplea para <em><u>resaltar texto</u></em>. El siguiente texto hemos resaltado todos los "ipsum" de un Lorem
+        Ipsum de la
+        siguiente manera:</p>
+    <p>&lt;p>Lorem <strong>&lt;mark></strong>ipsum<strong>&lt;/mark></strong> dolor sit amet, consectetur adipiscing
+        elit. Neque porro quisquam
+        est qui dolorem <strong>&lt;mark></strong>ipsum<strong>&lt;/mark></strong> quia dolor sit amet, consectetur,
+        adipisci velit...
+        &lt;/p></p>
+    <p>Y el navegador lo representaria de esta forma:</p>
+    <p style="background-color: rgb(236, 229, 229);">Lorem <mark>ipsum</mark> dolor sit amet, consectetur adipiscing elit. Neque porro quisquam
+        est qui dolorem <mark>ipsum</mark> quia dolor sit amet, consectetur, adipisci velit...
+    </p>
+    <h3>ETIQUETA &lt;span></h3>
+    <p>Este elemento se usa para <strong><u>asignar formato a un fragmento de texto</u></strong> mediante los atributos
+        <em>style, class o
+            id</em> que se verán más adelante.</p>
+
+    <h3>Elementos para estilos</h3>
+    <p> Se usan para poner el texto en cursiva, negrita ó subrayado, aunque se recomienda no emplear estos elementos y
+        asignar estilos de formato mediante CSS.</p>
+    <ul>
+        <li>cursiva: etiqueta <strong>&lt;i></strong></li>
+        <li>negrita: etiqueta <strong>&lt;b></strong></li>
+        <li>subrayada: etiqueta <strong>&lt;u></strong></li>
+    </ul>
+
+    <h3>Referencias de caracteres con nombre</h3>
+    <p>Existen algunos caracteres o símbolos que no aparecen en el teclado y que en
+        ocasiones necesitaremos introducirlos en el texto.</p>
+    <p>Estos caracteres en el código HTML se forma con un & (o ampersand) seguido de uno
+        de los tres siguientes:</p>
+    <p>1. Código número en base 10 → En este caso se indica con # seguido de un entero en
+        base 10. Por ejemplo el símbolo del copyright (&#169) sería &amp#169.</p>
+    <p>2. Código numérico en base hexadecimal → En este caso se indica # seguido de x o X y,
+        a continuación el código numérico en base hexadecimal. Usando el ejemplo anterior, 
+        el símbolo del copyright &#xA9 se &amp#xA9</p>
+    <p>3. Nombre → El nombre del carácter. La referencia termina con punto y coma. 
+        Siguiendo el ejemplo del símbolo de copyright &copy; se escribirá &ampcopy;</p>
+</body>
+
+</html>

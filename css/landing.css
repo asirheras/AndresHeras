@@ -1,0 +1,130 @@
+/*RESETEAMOS CSS NAVEGADOR*/
+  * {                         X
+  margin: 0;
+  padding: 0;
+  }
+
+/*
+GRID 
+                    1fr                         3fr
+40% |-----Foto-----|------ Presentación--------|
+60% |-----Menú---|-------Presentación--------|
+
+*/
+  .contenedor {
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 40% 60%;
+
+    grid-template-areas:
+      'Foto Presentacion'
+      'Menu Presentacion';
+    justify-content:space-around;
+    height: 100%;
+   background-color: #87a98e;
+
+  }
+  
+  title{
+    background-color: black;
+    color:#a6e665;
+  }
+
+  #Foto {
+
+    grid-area: Foto;
+
+    margin: auto 10px auto 10px;
+    padding: 10px;
+
+    background-color: #87a98e;
+
+    text-align: center;
+
+  }
+
+
+  #Presentacion {
+
+    grid-area: Presentacion;
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+  }
+
+  nav {
+    grid-area: Menu;
+    background-color: white;
+    width: 100%;
+    background-color: #87a98e;    
+
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 2vw;
+    /*El grosor de los botones*/
+    text-align: center;
+    /*Centrar texto  de los botones*/
+  }
+
+  nav li>a {
+    list-style: none;                                                                                                 /*Quita viñetas*/
+    text-decoration: none;                                                                                  /*Quita subrayado de "<a>"*/    
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;                                                                                                  /*Mediante display haremos que el menú sea 
+                                                                                                                                  HORIZONTAL (inline-block) ó VERTICAL (BLOCK)*/
+    border: 2px solid #87a98e;  /*Para ver los botones*/
+    margin: 1vw;
+    padding: 1vw;
+    border: 2px solid white;
+    font-size: 1.5em;
+
+  }
+
+  /*Reglas CSS para imágenes*/
+
+  .ojobuey {
+    border-radius: 50%;
+    border: 10px solid #a6e665;
+    text-align-last: auto;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social{
+    padding: 20px;
+  
+  }
+
+/*------ CSS DE ENLACES------*/
+
+  a:link {
+    color: #616161;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: black
+  }
+
+  a:visited {
+    color: #616161;
+    text-decoration: underline;
+  }
+
+  .social a:hover {
+   /* border:5px solid #a6e665;*/
+    border-radius: 10%;
+    box-shadow: 1px 5px #a6e665;}
+
+   nav  a:hover {
+    background-color: #a6e665;
+    font-weight: bolder;
+   }

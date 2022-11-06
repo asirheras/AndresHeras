@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="Udestinatario-8"?>
+<bandejadeentrada>
+    <email n="1">
+        <remitente>
+            <nombre>Perez Exposito</nombre>
+            <email>apex123@hotmail.com</email>
+        </remitente>
+        <destinatario>
+            <nombre>Antonio Zaragoza Haro</nombre>
+            <email>azahar23@gmail.com</email>
+        </destinatario>
+        <asunto>Quedada LOL</asunto>
+        <cuerpo>
+            <p>El sábado vamos a casa de Rafa para ver todos a los MAD LION
+         vs TEAM LIQUID</p>
+            <p>El que llegue el ultimo paga la pizza</p>
+        </cuerpo>
+    </email>
+    <email n="2">
+        <remitente>
+            <nombre>Carlos Faemino</nombre>
+            <email>greengrape@hotmail</email>
+        </remitente>
+        <destinatario>
+            <nombre>Javier Cansado</nombre>
+            <email>purplegrape@gmail.com</email>
+        </destinatario>
+        <asunto> ¿Cuál es la mayor mentira de todo el universo?</asunto>
+        <cuerpo>
+            <p>"He leído y acepto los Términos y Condiciones".</p>
+        </cuerpo>
+    </email>
+    <email n="3">
+        <remitente>
+            <nombre>Juan Joya Borja</nombre>
+            <email>risitas@gmail.com</email>
+        </remitente>
+        <destinatario>
+            <nombre>Juan Joya Borja</nombre>
+            <email>locodelacolina@gmail.com</email>
+        </destinatario>
+        <destinatario>locodelacolina@hotmail.com</destinatario>
+        <asunto>Contraseña del Wifi</asunto>
+        <cuerpo>
+            <p>Configura tu contraseña de wifi como 2444666668888888.</p>
+            <p>Así, cuando alguien te la pida, dile que es 12345678.</p>
+        </cuerpo>
+    </email>
+</bandejadeentrada>

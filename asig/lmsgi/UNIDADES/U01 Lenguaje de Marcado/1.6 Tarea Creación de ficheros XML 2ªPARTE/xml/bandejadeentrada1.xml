@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Udestinatario-8"?>
+<bandejadeentrada>
+    <email n="2">
+        <remitente>apex123@hotmail.com</remitente>
+        <destinatario>azahar23@gmail.com</destinatario>
+        <asunto>Quedada LOL</asunto>
+        <cuerpo>El sábado vamos a casa de Rafa para ver todos a los MAD LION
+         vs TEAM LIQUID</cuerpo>
+    </email>
+    <email n="2">
+        <remitente>greengrape@hotmail.com</remitente>
+        <destinatario>goldeapple@gmail.com</destinatario>
+        <asunto> ¿Cuál es la mayor mentira de todo el universo?</asunto>
+        <cuerpo>"He leído y acepto los Términos y Condiciones".</cuerpo>
+    </email>
+    <email n="3">
+        <remitente>marinicoelcorto@gmail.com</remitente>
+        <destinatario>locodelacolina@hotmail.com</destinatario>
+        <asunto>Contraseña del Wifi</asunto>
+        <cuerpo> Configura tu contraseña de wifi como 2444666668888888. 
+        Así, cuando alguien te la pida, dile que es 12345678.</cuerpo>
+        </email>
+</bandejadeentrada>

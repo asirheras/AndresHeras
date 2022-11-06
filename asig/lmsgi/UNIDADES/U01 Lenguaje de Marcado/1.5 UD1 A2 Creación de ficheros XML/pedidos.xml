@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+  <pedido cod="CE0801">
+    <producto>Cama tren</producto>
+    <cantidad>1</cantidad>
+    <pu>500</pu>
+  </pedido>
+  <pedido cod="CE0402">
+    <producto>Silla Gaming</producto>
+    <cantidad>1</cantidad>
+    <pu>1200</pu>
+  </pedido>
+  <pedido cod="CE0023">
+    <producto>Silla de madera</producto>
+    <cantidad>4</cantidad>
+    <pu>60</pu>
+  </pedido>
+</pedidos>

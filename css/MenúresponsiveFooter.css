@@ -1,0 +1,187 @@
+/*Colores elegidos de  COLORMIND:
+#29be09
+#7bdb1f
+#7ac8c0
+#d6e6e8
+#87a98e
+
+/*--------------Estilos generales-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  /* Restablecer el margen y el espacido interno de la hoja*/
+  margin: 0;
+  padding: 0;
+  /*Restablecer el modelo de caja de todos los elementos HTML*/
+  box-sizing: border-box;
+  /*http:\\mzl.la/3lAK8ok*/
+}
+body {
+  margin: 0em;
+ 
+  /*El body ocupará el 100% del viewport*/
+  width: 100;
+  height: 100vw;
+}
+
+/*Dimensiones del body*/
+
+header {
+width: 100%;
+background-color: #616161;
+}
+
+#btn-menu {
+display: none;
+}
+
+header label {
+display: none;
+height: 50px;
+width: 50px;
+padding: 10px;
+border-right: 1px solid #fff;
+}
+
+header label:hover {
+cursor: pointer;
+background: rgba(0, 0, 0, 0.3);
+}
+
+.menu ul {
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex;
+}
+
+.menu li {
+  padding: 50px
+border-right: 1px solid #fff;
+}
+
+.menu li:hover {
+background: rgba(0, 0, 0, 0.3);
+}
+
+.menu li a {
+display: block;
+padding: 15px 20px;
+color: white;
+text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+header label {
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    background: #616161;
+    width: 50%;
+    margin-left: -70%;
+    transition: all 0.5s;
+}
+
+.menu ul {
+    flex-direction: column;
+}
+
+.menu li {
+    border-top: 1px solid #fff;
+}
+
+#btn-menu:checked~.menu {
+    margin: 0;
+}
+}
+/*--------------------MENÚ GRID -----------------------------------*/
+      body{
+        background-color: #588f5b;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+      }
+      hgroup{
+        text-align: center;
+        background-color: white;
+        border-top-left-radius: 20;
+        margin: 75px;
+      }
+      hgroup>h3,h4{
+        border-bottom: 1px solid; padding-bottom: .6em;
+      }
+
+.grid-container{
+  display: grid;
+  gap: 1rem;
+  /*
+  grid-auto-rows: 50rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  */
+  border:space-evenly;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  background-color: #588f5b;
+}
+article{
+  width: 75%;
+  margin:auto;
+  padding: 20px;
+  text-align: center; 
+  font-size: 1.5em;
+  border-bottom: solid  white;
+  border-left: inset  white;
+  background: #fff;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  border-radius: 15px;
+  
+  
+}
+article:hover{
+  font-size: 1.5em;
+  padding: 50px 10px;
+  background: linear-gradient(to right,white, #e5ece6);
+  font-weight: bolder;
+  border-width: 40px;
+  border-radius: 10px 40px 40px 10px;
+  transform: scale(1);
+  box-shadow: 0 0 40px -10px white;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.menu-ejerc {
+  font-size: large;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------------------*/
+section>ul{/* ejercicio 01*/
+  margin: 50px;
+  display:flex ;
+  justify-content:space-evenly;
+}
+
+footer {/*fijar los footer al final de la hoja*/
+  text-align: center;
+  background-color: #7ac8c0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
