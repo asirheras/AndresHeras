@@ -117,7 +117,7 @@
 
 	Respuestas:
 	----------
-	plate>apple
+	1ª) plate>apple
 
 
 #15.SELECT THE TOP ORANGE - PSEUDO-SELECTOR de PRIMER HIJO (:first-child)
@@ -126,7 +126,7 @@
 
 	Respuestas:
 	----------
-	plate :first-child
+	1ª) plate :first-child
 
 #16.SELECT THE APPLE AND THE PICKLE ON THE PLATES - PSEUDO-SELECTOR de UNICO HIJO (:only-child)
     -------------------------------------------------------------------------------------------------
