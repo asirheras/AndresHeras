@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ejercicio de selectores</title>
+<link rel="stylesheet" href="./Selectores02.css">
+    <style>
+        /*Todas la celdas de la columna 1 de la tabla tendrán fondo blanco*/
+        table td:nth-child(1) {
+            background-color: white;
+        }
+
+        /*Todas la celdas de la columna 2 de la tabla tendrán fondo rojo*/
+
+        table td:nth-child(2) {
+            background-color: red;
+        }
+
+        /*Todas la celdas de la columna 3 de la tabla tendrán fondo verde*/
+
+        table td:nth-child(3) {
+            background-color: green;
+        }
+
+        /*Todas la celdas de la columna 41 de la tabla tendrán fondo azul*/
+
+        table td:nth-child(4) {
+            background-color: blue;
+        }
+        /*Ahora con un #id ponemos un color de fuente a cada fila*/
+
+        #row1 {color:teal}
+        #row2 {color:red}
+        #row3 {color:blue}
+        #row4 {color:orange}
+        #row5 {color:purple}
+        #row6 {color:olive}
+        #row7 {color:fuchsia}
+        #row8 {color:green}
+
+
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr id="row1">
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+            <td>teal</td>
+        </tr>
+        <tr id="row2">
+            <td>red</td>
+            <td>red</td>
+            <td>red</td>
+            <td>red</td>
+        </tr>
+        <tr id="row3">
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+            <td>blue</td>
+        </tr>
+        <tr id="row4">
+            <td>orange</td>
+            <td>orange</td>
+            <td>orange</td>
+            <td>orange</td< /tr>
+        <tr id="row5">
+            <td>purple</td>
+            <td>purple</td>
+            <td>purple</td>
+            <td>purple</td>
+        </tr>
+        <tr id="row6">
+            <td>olive</td>
+            <td>olive</td>
+            <td>olive</td>
+            <td>olive</td>
+        </tr>
+        <tr id="row7">
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+            <td>fuchsia</td>
+        </tr>
+        <tr id="row8">
+            <td>green</td>
+            <td>green</td>
+            <td>green</td>
+            <td>green</td>
+        </tr>
+    </table>
+</body>
+
+</html>

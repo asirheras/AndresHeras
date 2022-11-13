@@ -1,0 +1,31 @@
+/*Voy a utilizar en las clases los nombres de las etiquetas HTML
+        que van sustituir los selectores
+     */
+/*Los ENLACES en color ROJO */
+a {
+  color: red;
+}
+/* El TEXTO del PRIMER PÁRRAFO será AZUL*/
+#primero {
+  color: blue;
+}
+
+/*Todos los EM dentro del PRIMER DIV estarán en cursiva y 
+        fondo en AMARILLO */
+#primero em {
+  font-style: italic;
+  background-color: yellow;
+}
+
+/* Todos los EM dentro dentro del SEGUNDO DIV tendrán fondo negra,
+        letra en amarillo y en cursiva*/
+#segundo em.especial {
+  font-style: italic;
+  background-color: black;
+  color: yellow;
+}
+
+/* Todos los SPAN dentro DENTRO del SEGUNDO DIV estarán en negrita*/
+#segundo span {
+  font-weight: bold;
+}
