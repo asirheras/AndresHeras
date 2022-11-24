@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+    <link rel="stylesheet" href="./horario.css">
+</head>
+
+<body>
+    <table border="1">
+
+        <!--TITULO DE LA TABLA-->
+        <caption>Horario de 1ºASIR</caption>
+
+        <!-- DIFERENTES TAMAÑOS DE COLUMNAS: HORAS vs DIAS DE LA SEMANA-->
+
+        <colgroup span="6" style="width:100px ;">
+            <col span="1" style="width: 50px;">
+            <col span="5">
+        </colgroup>
+
+        <!--PARTES DE LA TABLA-->
+        <thead>
+            <tr>
+                <th>Horas</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    <p>Curso 2022-2023</p>
+                </td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>08:15<br />
+                    09:15</td>
+                <td rowspan="2" class="LMSGI">LMSGI</td>
+                <td rowspan="2" CASL class="GBD"> <a href="./RAlmsgi.html" target="_blank" rel="noopener noreferrer">GBD</a> </td>
+                <td rowspan="2" class="PAR">PAR</td>
+                <td rowspan="2" class="PAR">PAR</td>
+                <td rowspan="2" class="GBD"> <a href="./RAlmsgi.html" target="_blank" rel="noopener noreferrer">GBD</a> </td>
+            </tr>
+            <tr>
+                <td>09:15<br />
+                    10:15</td>
+            </tr>
+            <tr>
+                <td>10:15<br />11:15</td>
+                <td class="GBD"> <a href="./RAlmsgi.html" target="_blank" rel="noopener noreferrer">GBD</a> </td>
+                <td class="ISO">ISO</td>
+                <td class="LMSGI">LMSGI</td>
+                <td class="FOL">FOL</td>
+                <td class="FH">FH</td>
+            </tr>
+            <tr>
+                <td>11:15<br />11:45</td>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <td>11:45<br />12:45</td>
+                <td class="GBD"> <a href="./RAlmsgi.html" target="_blank" rel="noopener noreferrer">GBD</a> </td>
+                <td class="ISO">ISO</td>
+                <td class="LMSGI">LMSGI</td>
+                <td class="FOL">FOL</td>
+                <td class="FOL">FOL
+
+                </td>
+            </tr>
+            <tr>
+                <td>12:45<br />13:45</td>
+                <td rowspan="2" class="PAR">PAR</td>
+                <td rowspan="2" class="FH">FH</td>
+                <td rowspan="2" class="ISO">ISO</td>
+                <td rowspan="2" class="ISO">ISO</td>
+                <td rowspan="2" class="ISO">ISO</td>
+            </tr>
+            <tr>
+                <td>13:45<br />14:45</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

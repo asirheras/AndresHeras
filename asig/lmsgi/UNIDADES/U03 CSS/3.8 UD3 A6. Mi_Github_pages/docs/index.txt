@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio</title>
+</head>
+
+<body>
+    <h1>UD3 A6. Mi sitio. Github pages</h1>
+
+    <p>Vas a demostrar el buen uso que ya tienes de HTML y CSS. Para ello comienza creando <a href="./githpages/index.html">ESTE REPOSITORIO</a> :</p>
+
+    <ol>
+        <li>Activa el GitHub Pages. Te permite utilizar tu repositorio como fuente de un sitio Web. De esta forma GitHub
+            funciona como un hosting: un servicio de alojamiento online que permite publicar un sitio web en Internet.
+            Es un espacio en un servidor que almacena todos los archivos y datos de tu sitio web para que funcione
+            correctamente.</li>
+
+        <li>En la configuración del repositorio (Settings) toma como fuente la rama main y como carpeta de origen docs
+            de la misma rama. Los cambios en la carpeta de origen se publicarán en el sitio de GitHub Pages. Normalmente
+            es instantáneo.</li>
+        <li>Añade un index.html. Indica un nombre al sitio y tu nombre como autor.</li>
+        <li>Añade al README.md del sitio el enlace donde visitarlo</li>
+        <li>Envía las dos urls: hosting y repositorio</li>
+        <li>Crea un sitio con las siguientes características:</li>
+        <ol>
+            <li>Mediante distintos enlaces se podrá navegar a través de los contenidos del sitio</li>
+            <li>Definición del texto: Listas de tipos de letra, tamaños, estilo y cuerpo del tipo de letra, efectos y
+                decoración del texto, texto sombreado, alineación e interlineado</li>
+            <li>Uso de template areas con etiquetas html semántico</li>
+            <li>Añade un logo que te represente</li>
+            <li>Entrega el horario con celdas expandidas y clases</li>
+            <li>Entrega un listado con los RA de este módulo. Su enlace vendrá del horario</li>
+            <li>Inserta imágenes e imágenes de fondo</li>
+        </ol>
+    </ol>
+
+    <h2>De interés</h2>
+    <ul>
+        <li>
+            <a href="https://docs.github.com/en/pages/quickstart" target="_blank" rel="noopener noreferrer">Quickstart for GitHub Pages</a>
+        </li>
+        <li>
+            <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" target="_blank" rel="noopener noreferrer">GitHub About Pages</a>
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Styling_text/Fundamentals
+            ">MDN - Fundamentos de texto y fuentes tipográficas</a>
+        </li>
+        <li>
+            <a href="    https://web.dev/learn/css/grid/#areas-de-plantilla-de-cuadricula
+            " target="_blank" rel="noopener noreferrer">Learn CSS - Areas de plantilla de cudricula</a>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

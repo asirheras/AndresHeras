@@ -1,0 +1,54 @@
+ /*Familia y tamaño de la fuente + alineación del texto*/
+ table {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+/*Color a la primera fila*/
+th {
+   : background-color: #bcb4b4;
+    ;
+}
+
+td:first-child {
+    background: #bcb4b4;
+    padding: 5px 20px 5px 20px;
+}
+
+
+/*COLOR a las PRIMERAS CELDAS que corresponden a las HORAS*/
+
+tfoot td:first-child{
+    background-color: rgb(191, 0, 255);
+}
+
+/*Asigno COLORES a las ASIGNATURAS*/
+
+.GBD {
+
+    background-color: rgb(219, 102, 102);
+}
+
+.ISO {
+    background-color: rgb(175, 122, 225);
+}
+
+.LMSGI {
+    background-color: rgb(231, 231, 145);
+}
+
+.FH {
+    background-color: rgb(129, 231, 129);
+}
+
+.PAR {
+    background-color: rgb(241, 195, 109);
+
+}
+
+.FOL {
+    background-color: rgb(238, 99, 178);
+}

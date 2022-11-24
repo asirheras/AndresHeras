@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Esta actividad sobre la web semántica estática" />
+    <meta name="author" content="Andres Heras">
+    <meta name="keywords" content="LMSGI,HTML5,CSS,semántica,desarrolloweb" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/LogonameFB.png" sizes="64x64">
+
+    <title>UD2 A2 HTML semántico</title>
+</head>
+
+<body>
+    <!-- ¿Se puede poner la clase container-grid al body ?-->
+    <div class="grid-container">
+        <header>
+            <img src="./images/logo.svg" alt=" mi logo " tiltle="Logo con mis iniciales" width="300" height="300" />
+            <h1>Andres Heras</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li> <a href="#">Inicio |</a>
+                </li>
+                <li> <a href="./practicas.html" target="_blank"> LMSGI |</a>
+                </li>
+                <li> <a href="#" target="_blank">Blog |</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Sobre mí</h2>
+                <div id="Foto">
+                    <picture>
+                        <img class="ojobuey" src="./images/me.jpeg" width='200' height="200"
+                            alt="Foto personal en blanco y negro" title="Mi foto">
+                    </picture>
+                    <p> Soy estudiante de 1º de CFGS de Administración de Sistemas Informáticos en Red (ASIR) en el
+                        Instituto Gran Capitán y en este portafolio expondré los ejercicios realizados en la asignatura
+                        de Lenguaje de Marcas y Sistemas de Gestión de la Información (LMSGI) </p>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Enlaces de interés</h2>
+            <p><a href="./UNIDADES/U02 HTML/2.5 UD02 A4 Tablas/Horario/index.html">Horario</a> </p>
+            <p><a href="https://github.com/q92helea?tab=repositories">Mis repositorios</a> </p>
+
+        </aside>
+        <footer>
+            <!-- El siguiente script me permite poner el @AÑO Todos los derechos -Andrés Heras-->
+            <address>Córdoba, Spain</address>
+            <div>
+                &copy;
+                <span id="copyright">
+                    <script>
+                        document.getElementById('copyright').appendChild(document.createTextNode(new Date()
+                            .getFullYear()))
+                    </script>
+                </span>
+                Todos los derechos - Andrés Heras
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
