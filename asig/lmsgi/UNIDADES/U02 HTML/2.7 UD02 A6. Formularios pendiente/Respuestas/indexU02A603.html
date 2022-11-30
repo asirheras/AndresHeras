@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Andrés Heras">
+  <meta name="description" content="Esta es la actividad 6(A6) de la unidad 02 HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./css/formularios.css">
+
+</head>
+
+<body>
+
+  <h1>Formulario de registro</h1>
+  
+  <form action="" method="get">
+  
+  <label>Nombre:<input type="text" name="nombre" id="nombre" maxlength="50" /></label> 
+  
+  
+  <label>Apellidos:<input type="text" name="apellidos" id="apellidos" maxlength="50" /></label> 
+  
+  
+  <label>Sexo:
+    <input type="radio" name="sexo" id="sexo" value="H" /> hombre <input type="radio" name="sexo"id="sexo" value="M" /> mujer
+  </label>
+  
+  
+  <label>Correo:<input type="text" name="correo" id="correo" maxlength="100"/></label> 
+  
+  
+  <label>Población:</label>
+  <select name="poblacion" id="poblacion">
+  <option>Alicante</option>
+  <option>Madrid</option>
+  <option>Sevilla</option>
+  <option>Valencia</option>
+  </select> 
+  
+  <label>Descripción:
+  <textarea name="descripcion" id="descripcion" rows="6" cols="60"></textarea></label>
+  
+  
+  <label><input type="checkbox" name="info" id="info" checked="checked" />Deseo recibir información sobre novedades y ofertas</label>
+  
+  
+  <label><input type="checkbox" name="condiciones" id="condiciones" /> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+  
+  
+  <label><input type="submit" value="Enviar" /></label>
+  </form>
+  
+  </body>
+</html>

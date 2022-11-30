@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andrés Heras">
+    <meta name="description" content="Solución del ejercicio 5 de la Actividad 6 de Formularios HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formularios.css">
+    <title>A6 Formularios HTML</title>
+</head>
+
+<body>
+    <h1>Formulario pdf</h1>
+    <form action="http://www.pizzaexpress.com/pedidos.php" method="get">
+        <fieldset>
+            <legend>Pide tu pizza express</legend>
+            <label>
+                Nombre <input type="text" name="nombre" size="20" maxlength="30" tabindex="1" required
+                    placeholder="Introduce tu nombre" />
+            </label>
+
+            <label>
+                Apellidos <input type="text" name="apellidos" size="40" maxlength="60" tabindex="2" required
+                    placeholder="Introduce tus apellidos" />
+            </label>
+
+            <label>
+                Buscar <input type="search" name="buscar" size="60" placeholder="Introduce un texto a buscar" />
+            </label>
+
+            <label>
+                Dirección web <input type="url" name="direccion_web" size="50" maxlength="256" tabindex="4" />
+            </label>
+
+            <label>
+                Email <input type="email" name="email" size="50" maxlength="128" tabindex="5" />
+            </label>
+
+            <label>
+                Fecha de nacimiento <input type="date" name="fecha_nac" tabindex="7" required />
+            </label>
+
+            <label>
+                Hora de salida <input type="time" name="hora_salida" />
+            </label>
+
+            <label>
+                Edad <input type="number" name="edad" size="2" min=”18” max=”65” tabindex="6" required /></label>
+
+            <label>
+                Porcentaje <input type="range" name="porcentaje" min="0" max="100" step="0.01" value="0" />
+            </label>
+            <label>
+                Color <input type="color" name="color" value="#FF0000" />
+            </label>
+            <label><input type=“checkbox” name=”familia_num” value=“Si”>Familia Numerosa</label>
+            <fieldset>
+                <legend>Forma de pago </legend>
+                <input type="radio" name="forma_pago" value="visa" /> Visa
+                <input type="radio" name="forma_pago" value="ae" /> American
+                Express
+                <input type="radio" name="forma_pago" value="mc" /> MasterCard
+                <input type="radio" name="forma_pago" value="pp" /> Paypal
+            </fieldset>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Andrés Heras">
+  <meta name="description" content="Esta es la respuesta de ejercicio 4 de la actividad 6(A6) de la unidad 02 HTML">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./css/formularios.css">
+
+</head>
+
+<body>
+
+  <form action="" method="get">
+    <label>
+      Nombre: 
+      <input type="text" name="name_control" id="name_control" autofocus required />
+    </label>
+
+    <label>
+      Correo electrónico: 
+      <input type="email" name="email_control" id="email_control" required />
+    </label>
+
+    <label>
+      URL: 
+      <input type="url" name="url_control" id="url_control"
+        placeholder="Escribe la URL de tu página web personal" />
+    </label>
+
+    <label>
+      Fecha: 
+      <input type="date" name="date_control" id="date_control" />
+    </label>
+
+    <label>
+      Tiempo: 
+      <input type="time" name="time_control" id="time_control"/>
+    </label>
+
+      <label>
+        Fecha y hora: 
+        <input type="datetime" name="datetime_control" id="datetime_control" />
+      </label>
+
+      <label>
+        Mes: 
+        <input type="month" name="month_control" id="moth_control" />
+      </label>
+
+      <label>
+        Semana: 
+        <input type="week" name="week_control" id="week_control" />
+      </label>
+
+      <label>
+        Número (min -10, max 10): 
+        <input type="number" name="number_control" id="number_control"min="-10" max="10" value="0" />
+      </label>
+
+      <label>
+        Teléfono: 
+        <input type="tel" name="tel_control" id="tel_control" />
+      </label>
+
+      <label>
+        Término de búsqueda: 
+        <input type="search" name="search_control" id="search_control" />
+      </label>
+
+      <label>
+        Color favorito:
+         <input type="color" name="color_control" id="color_control"/>
+      </label>
+
+      <label>
+        <input type="submit" value="Enviar" />
+      </label>
+      
+  </form>
+</body>
+</html>
