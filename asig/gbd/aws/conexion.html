@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EC2+RDS+S3</title>
+</head>
+<body>
+    <pre>
+        
+---- 1.Creamos una instancia EC2 linux Ubuntu 22.04 ----
+1.1.Creamos los grupos de seguridad
+1.2.Modificamos los permisos: SSH(22) y HTTP (80)
+1.3.Añadimos una IP elástica
+1.4.Instalamos Apache y PHP:
+	sudo update
+	sudo apt install apache2
+#Comprobamos que funciona visitando la dirección pública de la EC2,
+1.5.Instalamos PHP:
+	sudo apt install php php-mysql
+	cd /var/www/html/
+	sudo touch index.php
+	sudo nano index.php
+#Comprobamos que funciona visitando "dirección_PUBLICA_de_la_EC2\index.php
+
+1.6 Modificamos el ROL IAM a LabRole
+
+
+------- 2. Creamos una BD en Amazon RDS----
+
+#Estamos en una academia 
+
+2.1.Opciones de motor: MYSQL
+2.2.Plantillas: Capa Gratuita
+2.3. CONFIGURACIÓN>
+	Identificador de instancias de bases de datos: "NombredelaBD"
+	Configuración de credenciales
+		Nombre de usuario Maestro:admin
+		Contraseña Maestra:
+	Conectividad
+		Acceso publico: SÍ
+#Tiene que ser NO pero como tenemos que subir la BD elegimos SÍ. Cuando subamos la BD hay que cambiar el acceso público a NO.
+	Grupo de seguridad de VPC (FIREWALL)
+		Crear Grupo de seguridad
+		Zona de disponibilidad:la tuya           --------
+							|CREAR BD|
+							 --------
+---------------------------------------------------------------------------------------------
+NOTA: Mientras se está creando la RDS, se empezó a instalar Amazon S3 (apartado 3) para ahorrar tiempo.
+---------------------------------------------------------------------------------------------
+
+2.2 Copiamos el endpoint y creamos una conexión con MySQL Workbench
+	2.2.1 Hostname: "ENDPOINT"
+	2.2.2 Username: admin	
+	2.2.3 Abrimos delegado.sql con un editor de código, copiamos, pegamos en el editor SQL DEL MySQL WORKBENCH y pulsamos sobre el rayito para crear la BD delegado.
+
+2.3 Creada la BD delegado, modificamos la seguridad de la RDS:
+	2.3.1 Modificamos la BD RDS para que no sea pública. Pulsamos al botón MODIFICAR en la RDS, y en 	CONECTIVIDAD>CONFIGURACIÓN ADICIONAL>ACCESO PÚBLICO seleccionamos NO ACCESIBLE PUBLICAMENTE.
+	2.3.2 Por último añadimos más seguridad, cambiando la regla de seguridad para que solo puede ser visible para 	la EC2. Vamos a la regla de seguridad, y solo permitimos la conexión a la BD con la IP PRIVADA de la máquina 	EC2.
+
+---- 3. Creamos una S3 ----
+
+3.1 CONFIGURACIÓN:
+	CONFIGURACIÓN GENERAL
+		Nombre del bucket (¡SIEMPRE MINUSCULAS Y SIN ESPACIOS!)
+	CONFIGURACIÓN DEL BLOQUEO DE ACCESO PÚBLICO PARA ESTE BUCKET
+		DESACTIVAR Bloquear todo acceso público
+		ACTIVAR    RECONOZCO QUE LA CONFIGURACIÓN ACTUAL PUEDE PROVOCAR QUE ESTE BUCKET Y LOS OBJETOS 
+		  	 QUE CONTIENE SE VUELVAN PÚBLICOS        --------
+								|CREAR BD|
+								 --------
+
+3.2.Vamos al bucket, en la pestaña OBJETOS y CARGAR los archivos.
+3.3.En la pestaña de PERMISOS,modificamos la POLITICA DEL BUCKET añadiendo el siguiente script:
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "ARN_del_bucket/*"
+        }
+    ]
+}
+------------------------------------------------------------------------	
+NOTA:Cuando el editor JSON da error, y lo corriges, la bandera de error no desaparecerá hasta que no vuelvas 
+a pegar el código corregido
+------------------------------------------------------------------------
+
+
+---- 4. CONEXIÓN DE LA EC2 CON LA S3 -------
+
+    4.1 Instalamos el interface de línea de comandos
+        sudo apt install awscli
+        sudo apt update
+        sudo systemctl restart apache2
+    4.2 Conectamos la EC2 con la S3 para que se sincronice
+        sudo aws s3 sync s3://nombredelbucket /var/www/html
+    4.3 Localizamos el archivo config.html y modificamos los datos:
+        sudo cd /var/www/html
+        sudo nano config.php
+        
+	        <?php
+	        define('MYSQL_HOST', 'PUNTO_DE_ENLACE_RDS');
+	        define('MYSQL_DATABASE', 'NOMBRE_DE_LA_BD');
+	        define('MYSQL_USER', 'NOMBRE_USUARIO');
+	        define('MYSQL_PASSWORD', 'PASSWORD');
+
+$mysqli=mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE);
+
+Ahora comprobamos que todo funciona poniendo en el navegador los siguiente:
+"IP_PUBLICA_EC2"/index.php
+		
+    </pre>
+</body>
+</html>
