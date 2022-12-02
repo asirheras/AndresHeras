@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,42 +21,42 @@
 	cd /var/www/html/
 	sudo touch index.php
 	sudo nano index.php
-#Comprobamos que funciona visitando "dirección_PUBLICA_de_la_EC2\index.php
+#Comprobamos que funciona visitando: dirección_PUBLICA_de_la_EC2\index.php
 
-1.6 Modificamos el ROL IAM a LabRole
+1.6 Modificamos el ROL IAM de la EC2 a LabRole
 
 
 ------- 2. Creamos una BD en Amazon RDS----
 
-#Estamos en una academia 
-
 2.1.Opciones de motor: MYSQL
-2.2.Plantillas: Capa Gratuita
+2.4.Plantillas: Capa Gratuita
 2.3. CONFIGURACIÓN>
-	Identificador de instancias de bases de datos: "NombredelaBD"
-	Configuración de credenciales
-		Nombre de usuario Maestro:admin
-		Contraseña Maestra:
-	Conectividad
-		Acceso publico: SÍ
+        Identificador de instancias de bases de datos: "NombredelaBD"
+	    Configuración de credenciales
+		    Nombre de usuario Maestro:admin
+		    Contraseña Maestra:
+	    Conectividad
+		    Acceso publico: SÍ
+
 #Tiene que ser NO pero como tenemos que subir la BD elegimos SÍ. Cuando subamos la BD hay que cambiar el acceso público a NO.
-	Grupo de seguridad de VPC (FIREWALL)
-		Crear Grupo de seguridad
-		Zona de disponibilidad:la tuya           --------
-							|CREAR BD|
-							 --------
+
+	    Grupo de seguridad de VPC (FIREWALL)
+		    Crear Grupo de seguridad
+		    Zona de disponibilidad:la tuya           --------
+							                        |CREAR BD|
+							                         --------
 ---------------------------------------------------------------------------------------------
 NOTA: Mientras se está creando la RDS, se empezó a instalar Amazon S3 (apartado 3) para ahorrar tiempo.
 ---------------------------------------------------------------------------------------------
 
-2.2 Copiamos el endpoint y creamos una conexión con MySQL Workbench
-	2.2.1 Hostname: "ENDPOINT"
-	2.2.2 Username: admin	
-	2.2.3 Abrimos delegado.sql con un editor de código, copiamos, pegamos en el editor SQL DEL MySQL WORKBENCH y pulsamos sobre el rayito para crear la BD delegado.
+2.4 Copiamos el endpoint y creamos una conexión con MySQL Workbench
+	2.4.1 Hostname: "ENDPOINT"
+	2.4.2 Username: admin	
+	2.4.3 Abrimos delegado.sql con un editor de código, copiamos, pegamos en el   editor SQL DEL MySQL WORKBENCH y pulsamos sobre el rayito para crear la BD delegado.
 
 2.3 Creada la BD delegado, modificamos la seguridad de la RDS:
 	2.3.1 Modificamos la BD RDS para que no sea pública. Pulsamos al botón MODIFICAR en la RDS, y en 	CONECTIVIDAD>CONFIGURACIÓN ADICIONAL>ACCESO PÚBLICO seleccionamos NO ACCESIBLE PUBLICAMENTE.
-	2.3.2 Por último añadimos más seguridad, cambiando la regla de seguridad para que solo puede ser visible para 	la EC2. Vamos a la regla de seguridad, y solo permitimos la conexión a la BD con la IP PRIVADA de la máquina 	EC2.
+	2.3.2 Por último añadimos más seguridad, cambiando la regla de seguridad para que solo puede ser visible para 	la EC2. Vamos a la regla de seguridad, y solo permitimos la conexión a la BD con la IP PRIVADA de la máquina EC2.
 
 ---- 3. Creamos una S3 ----
 
