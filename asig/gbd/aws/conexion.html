@@ -67,8 +67,8 @@ NOTA: Mientras se está creando la RDS, se empezó a instalar Amazon S3 (apartad
 		DESACTIVAR Bloquear todo acceso público
 		ACTIVAR    RECONOZCO QUE LA CONFIGURACIÓN ACTUAL PUEDE PROVOCAR QUE ESTE BUCKET Y LOS OBJETOS 
 		  	 QUE CONTIENE SE VUELVAN PÚBLICOS        --------
-								|CREAR BD|
-								 --------
+								                    |CREAR BD|
+								                     --------
 
 3.2.Vamos al bucket, en la pestaña OBJETOS y CARGAR los archivos.
 3.3.En la pestaña de PERMISOS,modificamos la POLITICA DEL BUCKET añadiendo el siguiente script:
@@ -112,7 +112,7 @@ $mysqli=mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE);
 
 Ahora comprobamos que todo funciona poniendo en el navegador los siguiente:
 "IP_PUBLICA_EC2"/index.php
-		
+	
     </pre>
 </body>
 </html>
