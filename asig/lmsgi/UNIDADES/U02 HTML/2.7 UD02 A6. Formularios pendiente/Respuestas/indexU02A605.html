@@ -12,58 +12,68 @@
 
 <body>
     <h1>Formulario pdf</h1>
-    <form action="http://www.pizzaexpress.com/pedidos.php" method="get">
+    <form action="" method="get">
         <fieldset>
-            <legend>Pide tu pizza express</legend>
+            <legend>Datos personales</legend>
+            <label for="nombre">Nombre: <input type="text" id="nombre" size="50" autofocus required></label>
             <label>
-                Nombre <input type="text" name="nombre" size="20" maxlength="30" tabindex="1" required
-                    placeholder="Introduce tu nombre" />
+                Correo electrónico: <input type="email" name="email" size="50" maxlength="128" />
             </label>
-
-            <label>
-                Apellidos <input type="text" name="apellidos" size="40" maxlength="60" tabindex="2" required
-                    placeholder="Introduce tus apellidos" />
+            <label for="url">URL: <input type="url" name="url" id="url"
+                    placeholder="Escribe la URL de tu página"></label>
+            <label for="ciudad">Ciudad <select name="cidudad" id="ciudad">
+                    <option value="Almería">ALMERÍA
+                    </option>
+                    <option value="Cádiz">CÁDIZ
+                    </option>
+                    <option value="Córdoba">CÓRDOBA
+                    </option>
+                    <option value="Granada">GRANADA </option>
+                    <option value="Huelva">HUELVA
+                    </option>
+                    <option value="Málaga">MÁLAGA
+                    </option>
+                    <option value="Sevilla" selected>SEVILLA
+                    </option>
+                </select>
             </label>
-
-            <label>
-                Buscar <input type="search" name="buscar" size="60" placeholder="Introduce un texto a buscar" />
-            </label>
-
-            <label>
-                Dirección web <input type="url" name="direccion_web" size="50" maxlength="256" tabindex="4" />
-            </label>
-
-            <label>
-                Email <input type="email" name="email" size="50" maxlength="128" tabindex="5" />
-            </label>
-
-            <label>
-                Fecha de nacimiento <input type="date" name="fecha_nac" tabindex="7" required />
-            </label>
-
-            <label>
-                Hora de salida <input type="time" name="hora_salida" />
-            </label>
-
-            <label>
-                Edad <input type="number" name="edad" size="2" min=”18” max=”65” tabindex="6" required /></label>
-
-            <label>
-                Porcentaje <input type="range" name="porcentaje" min="0" max="100" step="0.01" value="0" />
-            </label>
-            <label>
-                Color <input type="color" name="color" value="#FF0000" />
-            </label>
-            <label><input type=“checkbox” name=”familia_num” value=“Si”>Familia Numerosa</label>
-            <fieldset>
-                <legend>Forma de pago </legend>
-                <input type="radio" name="forma_pago" value="visa" /> Visa
-                <input type="radio" name="forma_pago" value="ae" /> American
-                Express
-                <input type="radio" name="forma_pago" value="mc" /> MasterCard
-                <input type="radio" name="forma_pago" value="pp" /> Paypal
-            </fieldset>
         </fieldset>
+
+        <fieldset>
+            <legend>Otros datos</legend>
+            <label>
+                Fecha: <input type="date" name="fecha" size="75">
+            </label>
+            <label>
+                Tiempo: <input type="time" name="tiempo" size="75" />
+            </label>
+            <label>
+                Fecha y hora: <input type="datetime" name="datetime" size="20" />
+            </label>
+            <label>
+                Mes: <input type="month" name="month"/>
+            </label>
+            <label for="week">Semana <input type="week" name="week" id="semana">
+            </label>
+            <label>
+                Número,(min-10,max 10): <input type="number" name="number" min="-10" max="10" value="0" />
+            </label>
+            <label for="tf">Telefono: <input type="number" name="tf" id="tf"></label>
+            <label for="search">Término de búsqueda: <input type="search" name="search" id="search"></label>
+            <label for="search">Color favorito: <input type="color" name="color" id="color"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Otros controles</legend>
+            <label for="hobby">Aficiones <input type="checkbox" value="cine" id="hobby" checked>Cine<input
+                    type="checkbox" value="sport" id="hobby">Deportes
+            </label>
+            <label>Formas de pago</label>
+            <input type="radio" name="forma_pago" value="V" /> Visa
+            <input type="radio" name="forma_pago" value="A" />American
+            Express
+            <input type="radio" name="forma_pago" value="M" /> MasterCard
+
+
     </form>
 
 </body>
