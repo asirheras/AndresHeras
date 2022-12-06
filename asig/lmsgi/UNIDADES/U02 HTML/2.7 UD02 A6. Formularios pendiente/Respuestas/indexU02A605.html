@@ -12,12 +12,12 @@
 
 <body>
     <h1>Formulario pdf</h1>
-    <form action="" method="get">
+    <form action="www.ejemplo.com" method="get">
         <fieldset>
             <legend>Datos personales</legend>
             <label for="nombre">Nombre: <input type="text" id="nombre" size="50" autofocus required></label>
             <label>
-                Correo electrónico: <input type="email" name="email" size="50" maxlength="128" />
+                Correo electrónico: <input type="email" name="email" size="50" maxlength="128">
             </label>
             <label for="url">URL: <input type="url" name="url" id="url"
                     placeholder="Escribe la URL de tu página"></label>
@@ -45,18 +45,18 @@
                 Fecha: <input type="date" name="fecha" size="75">
             </label>
             <label>
-                Tiempo: <input type="time" name="tiempo" size="75" />
+                Tiempo: <input type="time" name="tiempo" size="75">
             </label>
             <label>
-                Fecha y hora: <input type="datetime" name="datetime" size="20" />
+                Fecha y hora: <input type="datetime-local" name="datetime-local" size="20">
             </label>
             <label>
-                Mes: <input type="month" name="month"/>
+                Mes: <input type="month" name="month">
             </label>
-            <label for="week">Semana <input type="week" name="week" id="semana">
+            <label for="week">Semana <input type="week" name="week" id="week">
             </label>
             <label>
-                Número,(min-10,max 10): <input type="number" name="number" min="-10" max="10" value="0" />
+                Número,(min-10,max 10): <input type="number" name="number" min="-10" max="10" value="0">
             </label>
             <label for="tf">Telefono: <input type="number" name="tf" id="tf"></label>
             <label for="search">Término de búsqueda: <input type="search" name="search" id="search"></label>
@@ -64,14 +64,14 @@
         </fieldset>
         <fieldset>
             <legend>Otros controles</legend>
-            <label for="hobby">Aficiones <input type="checkbox" value="cine" id="hobby" checked>Cine<input
-                    type="checkbox" value="sport" id="hobby">Deportes
-            </label>
+            <p>Aficiones
+            <input type="checkbox" value="cine" checked>Cine
+            <input type="checkbox" value="sport" id="hobby">Deportes </p>
+
             <label>Formas de pago</label>
-            <input type="radio" name="forma_pago" value="V" /> Visa
-            <input type="radio" name="forma_pago" value="A" />American
-            Express
-            <input type="radio" name="forma_pago" value="M" /> MasterCard
+            <input type="radio" name="forma_pago" value="V"> Visa
+            <input type="radio" name="forma_pago" value="A">American Express
+            <input type="radio" name="forma_pago" value="M"> MasterCard
         </fieldset>
 
     </form>
