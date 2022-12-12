@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1># UD3 A7. El modelo de Caja CSS</h1>
+
+<p>Todo en CSS tiene una caja alrededor, y comprender estas cajas es clave para poder crear diseños con CSS o para alinear elementos con otros elementos. </p>
+
+<p>En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea (inline). Estas características se refieren al modo como se comporta la caja en términos de flujo de página y en relación con otras cajas de la página. </p>
+<ul>
+  <li>Si una caja se define como un <strong>bloque</strong> &lt;h1&gt;, &lt;p&gt;...
+    <ul>
+      <li> La caja fuerza un salto de línea al llegar al final de la línea.</li>
+      <li> La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su contenedor. </li>
+      <li> Se respetan las propiedades width y height.
+      </li>
+      <li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+    </ul>
+  </li>
+  <li>Si una caja tiene una visualización externa de tipo <strong>inline</strong> &lt;a&gt;, &lt;span&gt;...</li>
+  <ul>
+    <li>la caja no fuerza ningún salto de línea al llegar al final de la línea.</li>
+    <li>NO SE APLICAN las propiedades width y height </li>
+    <li>Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.</li>
+    <li>Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.
+    </li>
+  </ul>
+</ul>
+
+<p>El tipo de caja que se aplica a un elemento está definido por los valores de propiedad display, como block y inline, y se relaciona con el valor externo (outer) de visualización (display).</p>
+
+El modelo de cajas CSS completo se aplica a cajas que presentan comportamiento en bloque; las cajas con comportamiento en línea solo usan una parte del comportamiento definido en el modelo de cajas. El modelo define cómo funcionan juntas las diferentes partes de una caja (margen, borde, relleno y contenido) para crear una caja que puedas ver en tu página. Para complicarlo un poco más, hay un modelo de cajas estándar y un modelo de cajas alternativo que no veremos.
+
+<h2>Partes de una caja</h2>
+<ul>
+  <li>El contenido de la caja (o content box): El área donde se muestra el contenido, cuyo tamaño puede cambiarse utilizando propiedades como width y height.</li>
+  <li>El relleno de la caja (o padding box): El relleno es espacio en blanco alrededor del contenido; es posible controlar su tamaño usando la propiedad padding y otras propiedades relacionadas.</li>
+  <li>El borde de la caja (o border box): El borde de la caja envuelve el contenido y el de relleno. Es posible controlar su tamaño y estilo utilizando la propiedad border y otras propiedades relacionadas.</li>
+  <li>El margen de la caja (o margin box): El margen es la capa más externa. Envuelve el contenido, el relleno y el borde como espacio en blanco entre la caja y otros elementos. Es posible controlar su tamaño usando la propiedad margin y otras propiedades relacionadas.</li>
+</ul>
+
+
+
+
+
+Échale un vistazo a los enlaces de interés y realiza los siguientes ejercicios:
+<ol>
+  <li><a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/ejercicio-modelo-caja-1">Modelo de caja 1</a></li>
+  <li><a href="http://desarrolloweb.dlsi.ua.es/libros/html-css/ejercicio-modelo-caja-2a">Modelo de caja 2</a></li>
+  <li>Ejemplo cajas de bloque/en línea. Abre el siguiente <a href="./ejemplosCajas.html">ejemplo cajas</a> en el navegador Firefox de Mozilla. En este ejemplo tanto h1 como span tienen su propio</li>
+</ol>
+     <ul>
+       <li> width</li>
+       <li> height</li>
+       <li> padding</li>
+       <li> border</li>
+       <li> margin</li>
+       <li> background-color</li>
+     </ul>
+ 
+    <p>Abre las herramientas del navegador Firefox de Mozilla e indica</p>
+    
+    <ul>
+      <li><p>Qué propiedades NO se aplican y por qué</p></li>
+      <img src="firefox-span.png" alt="Imagen firefox">firefox span</li> 
+      <li>Padding y margin admiten de 1 a 4 valores. Averígualo en las herramientas del navegador y explica por qué</li>
+      <li>Al último párrafo añádele un span con tu apellido. Debe verser como el de la imagen,</li>
+      <li>sin espacios alrededor y con tus propios colores para que destaque</li>![imagen](<img src="./firefox-ultimo-parrafo.png" alt="Imagen del ultimo parrafo">firefox-ultimo-parrafo.png</img>)</li>
+      <li>Envía un pantallazo como el adjunto firefox-ultimo-parrafo pero con tu apellido</li>
+    </ul>
+
+<h2>De interés</h2>
+- 
+ <a href="   https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model#m%C3%A1rgenes_relleno_y_bordes
+ ">MDN|Aprende sobre desarrollo web>CSS>Bloques de construcción CSS>El modelo de caja</a>
+ <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">MDN|References>CSS>border
+ <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius">MDN|References>CSS>border-radius</a>
+ <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">MDN|Tecnología para desarrolladores web>CSS>Modelo de Caja de CSS>Introducción al modelo de caja básico de CSS</a>
+ <a href="https://developer.mozilla.org/es/docs/Web">Tecnología para desarrolladores web>CSS>Propiedades abreviadas</a>
+ <a href="https://lupitacode.medium.com/porcentajes-css-5cbb95967989">Unidades de Medida en CSS: Porcentajes</a>
+
+</body>
+</html>
