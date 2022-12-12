@@ -17,7 +17,7 @@
             <legend>Datos personales</legend>
             <label for="nombre">Nombre: <input type="text" id="nombre" size="50" autofocus required></label>
             <label>
-                Correo electrónico: <input type="email" name="email" size="50" maxlength="128">
+                Correo electrónico: <input type="email" name="email" size="50" maxlength="128" required>
             </label>
             <label for="url">URL: <input type="url" name="url" id="url"
                     placeholder="Escribe la URL de tu página"></label>
@@ -65,16 +65,21 @@
         <fieldset>
             <legend>Otros controles</legend>
             <p>Aficiones
-            <input type="checkbox" value="cine" checked>Cine
-            <input type="checkbox" value="sport" id="hobby">Deportes </p>
+            <input type="checkbox" value="cine" id="cine" checked>Cine
+            <input type="checkbox" value="sport" id="sport">Deportes </p>
 
-            <label>Formas de pago</label>
-            <input type="radio" name="forma_pago" value="V"> Visa
-            <input type="radio" name="forma_pago" value="A">American Express
-            <input type="radio" name="forma_pago" value="M"> MasterCard
+            <label for="forma_pago">Formas de pago</label>
+            <label for="V"><input type="radio" name="forma_pago" value="V" id="V"> Visa</label>
+            <label for="A"><input type="radio" name="forma_pago" value="A" id="A">American Express</label>
+            <label for="M"><input type="radio" name="forma_pago" value="M" id="M"> MasterCard</label>
         </fieldset>
+        <div>
+            <p><input type="submit" value="Send" accesskey="s" />
+                <input type="Reset" value="Reset" accesskey="r" /></p>
+        </div>
+ <span></span>
 
-    </form>
+       </form>
 
 </body>
 

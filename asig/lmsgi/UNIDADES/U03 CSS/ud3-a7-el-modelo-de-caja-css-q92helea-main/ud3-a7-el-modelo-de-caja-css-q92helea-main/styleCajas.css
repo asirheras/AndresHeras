@@ -1,0 +1,29 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+h1 {
+    width: auto;
+    height: auto; 
+    padding: 1em 2em;
+    border: 1em solid darkgreen;
+    margin: 1em;
+    background-color: lightseagreen;
+}
+
+p {
+    background-color: grey;
+}
+
+span {
+    color: blue;
+    width: 3em;
+    height: 3em;
+    padding: 2rem;
+    margin: 3rem;
+    background-color: pink;
+}
