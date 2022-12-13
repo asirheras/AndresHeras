@@ -130,7 +130,9 @@ Ahora comprobamos que todo funciona poniendo en el navegador los siguiente:
 Primero hay que borrar todos los archivos anteriormente descargados  en la carpeta /var/www/html/. 
 No borrar config.php ni index.html
 Para hacer esto la BD NO debe estar SECURIZADA: Tiene que ser PUBLICA y permitir CUALQUIER CONEXIÓN a través del puertos.
-Modificamos los archivos del siguiente enlace con nuestros datos, los subimos a la S3, sincronizamos con la EC2 (PASO 4). Si visitamos ahora la ip de la EC2, no habrá cambios, aunque reiniciemos apache, porque abre primero el index.html (la home de apache). Por tanto, habrá que modificar los nombres de dos archivos con el comando "mv".
+Modificamos los archivos del siguiente enlace con nuestros datos, los subimos a la S3, sincronizamos con la EC2 (PASO 4). 
+Si visitamos ahora la ip de la EC2, no habrá cambios, aunque reiniciemos apache, porque abre primero 
+el index.html (la home de apache). Por tanto, habrá que modificar los nombres de dos archivos con el comando "mv".
 Ejecutamos:
 
 cd /var/www/html
