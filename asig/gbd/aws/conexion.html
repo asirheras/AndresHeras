@@ -21,10 +21,20 @@
 	cd /var/www/html/
 	sudo touch index.php
 	sudo nano index.php
-#Comprobamos que funciona visitando: dirección_PUBLICA_de_la_EC2\index.php
+#Ahora escribimos el siguiente código:
+-------------------------------------
+&lt;?php
+ 
+phpinfo();
+ 
+?>
+-------------------------------------
+#Comprobamos que funciona visitando: 
+dirección_PUBLICA_de_la_EC2\index.php
 
 1.6 Modificamos el ROL IAM de la EC2 a LabRole
 
+NOTA: AQUI SE PUEDE HACER EL APARTADO 4.1 Y SEGUIR DESPUES POR EL APARTADO 2.
 
 ------- 2. Creamos una BD en Amazon RDS----
 
@@ -70,7 +80,7 @@ NOTA: Mientras se está creando la RDS, se empezó a instalar Amazon S3 (apartad
 								                    |CREAR BD|
 								                     --------
 
-3.2.Vamos al bucket, en la pestaña OBJETOS y CARGAR los archivos.
+3.2.Vamos al bucket, en la pestaña OBJETOS y CARGAR los <a href="./descargas/">archivos de la BD delegado</a> .
 3.3.En la pestaña de PERMISOS,modificamos la POLITICA DEL BUCKET añadiendo el siguiente script:
 {
     "Version": "2012-10-17",
@@ -102,6 +112,7 @@ a pegar el código corregido
         sudo cd /var/www/html
         sudo nano config.php
         Y modificamos los campos que necesarios:
+--------------------------------------------------------------------------		
 	        &lt;?php
 	        define('MYSQL_HOST', '(PUNTO_DE_ENLACE_RDS)');
 	        define('MYSQL_DATABASE', '(NOMBRE_DE_LA_BD)');
@@ -109,10 +120,32 @@ a pegar el código corregido
 	        define('MYSQL_PASSWORD', '(PASSWORD)');
 
 $mysqli=mysqli_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE);
-
+?>
+---------------------------------------------------------------------------
 Ahora comprobamos que todo funciona poniendo en el navegador los siguiente:
 "IP_PUBLICA_EC2"/index.php
-	
-    </pre>
+
+---- 5. INSERTAR DATOS EN LA BD A TRAVÉS DE LA EC2 EN EL EXAMEN-------
+
+Primero hay que borrar todos los archivos anteriormente descargados  en la carpeta /var/www/html/. 
+No borrar config.php ni index.html
+Para hacer esto la BD NO debe estar SECURIZADA: Tiene que ser PUBLICA y permitir CUALQUIER CONEXIÓN a través del puertos.
+Modificamos los archivos del siguiente enlace con nuestros datos, los subimos a la S3, sincronizamos con la EC2 (PASO 4). Si visitamos ahora la ip de la EC2, no habrá cambios, aunque reiniciemos apache, porque abre primero el index.html (la home de apache). Por tanto, habrá que modificar los nombres de dos archivos con el comando "mv".
+Ejecutamos:
+
+cd /var/www/html
+sudo mv nombreAntiguo nombreNuevo
+
+nombre antiguo 		|	nombre nuevo
+--------------------------------------
+index.html				index.txt
+home.html 				index.html
+
+
+
+Volvemos a visitar la IP de nuestra EC2 e ingresemos los datos, volvemos a SECURIZAR la BD.
+    
+</pre>
+	<a href="./environment/environment.rar">Archivos para subir a /var/www/html/ la de EC2</a>
 </body>
 </html>
