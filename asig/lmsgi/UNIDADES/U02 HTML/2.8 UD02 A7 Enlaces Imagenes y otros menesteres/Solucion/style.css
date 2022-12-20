@@ -1,5 +1,25 @@
 
 
+section {
+/* Enlaces separados de forma equidistante entre ellos*/
+    display: flex;
+    flex-direction: column;
+
+    /* A cada sección añado borde, padding y margin */
+    border: 2px solid rgb(255, 84, 104);
+    padding: 10px;
+    margin: 10px;
+}
+
+    /* A cada imagen añado borde, padding y margin */
+img{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+Ten en cuenta la accesibilidad del sitio
+Comprueba que el sitio es válido según uno de los validadores indicados
 h1 {
     background-color: green;
 }
@@ -10,28 +30,23 @@ h2 {
 .right{
     width: 64px;
     height: 64px;
+
+    /* Sitúala a la derecha la imagen con la propiedad float */
     float: right;
 }
 
 .left{
     width: 64px;
     height: 64px;
-    float: left;
+
+    /* Sitúala a la izquierda la imagen con la propiedad float */
+     float: left;
 
 }
 nav{
     display: flex;
     justify-content:space-around;
 }
-img{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid red;
-}
-section {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid rgb(255, 84, 104);
-    padding: 10px;
-    margin: 10px;
-}
+
+
+/* Este archivo CSS es VALIDO */
