@@ -6,7 +6,7 @@
             font-family: 'Work Sans', sans-serif;
         }
 
-        hgroup {
+        .hgroup {
             text-align: center;
             background-color: white;
             border-radius: 1em;
@@ -30,6 +30,9 @@
             color: #444;
             border-radius: 5em;
         }
+        section h2{
+            display: flex;
+align-items: center;     }
 
         .grid-item {
             background-color: #4440;
