@@ -1,7 +1,10 @@
-
+/* Enlaces separados de forma equidistante entre ellos*/
+nav{
+    display: flex;
+    justify-content:space-around;
+}
 
 section {
-/* Enlaces separados de forma equidistante entre ellos*/
     display: flex;
     flex-direction: column;
 
@@ -43,10 +46,7 @@ h2 {
      float: left;
 
 }
-nav{
-    display: flex;
-    justify-content:space-around;
-}
+
 
 
 /* Este archivo CSS es VALIDO */
