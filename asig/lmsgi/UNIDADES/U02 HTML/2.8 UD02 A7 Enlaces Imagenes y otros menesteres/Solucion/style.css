@@ -1,0 +1,37 @@
+
+
+h1 {
+    background-color: green;
+}
+
+h2 {
+    background-color: greenyellow;
+}
+.right{
+    width: 64px;
+    height: 64px;
+    float: right;
+}
+
+.left{
+    width: 64px;
+    height: 64px;
+    float: left;
+
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+}
+img{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid red;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 84, 104);
+    padding: 10px;
+    margin: 10px;
+}

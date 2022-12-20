@@ -1,0 +1,17 @@
+section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 84, 104);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    background-color: green;
+}
+
+h2 {
+    background-color: greenyellow;
+}
+
+
