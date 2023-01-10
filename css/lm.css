@@ -14,14 +14,28 @@
             padding: 0.1em;
         }
 
-        hgroup>h1,
+  /*       hgroup>h1,
         h3,
         h4 {
             border-left-color: solid #444;
             border-bottom: 5px solid;
             padding-bottom: 0.6em;
-        }
-
+        } */
+        .container {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+              ". title ."
+              "article article article"
+              "article article article";
+          }
+          
+         .subtitle { grid-area:title; }
+          
+          .article { grid-area: article; }
+          
         section {
             display: grid;
             grid-gap: 1em;
