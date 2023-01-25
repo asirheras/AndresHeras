@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Mis actualizaciones</title>
+    <link>https://silver-robot-5ea4a03d.pages.github.io/</link>
+    <description>Aqui encontraras todas las actualizaciones de mi GitHub</description>
+    <language>es-es</language>
+    <managingEditor>q92helea@hotmail.com</managingEditor>
+    <webMaster>a19helean@iesgrancapitan.org</webMaster>
+    <copyright>Todoslosderechosreservados</copyright>
+    <image>
+      <title>Mis actualizaciones</title>
+      <link>https://silver-robot-5ea4a03d.pages.github.io/</link>
+      <url>https://commons.wikimedia.org/wiki/File:Font_Awesome_5_brands_github-alt.svg</url>
+    </image>
+    <item>
+      <title>Blog Git</title>
+      <pubDate>Wed, 25 Jan 2023 17:41:11 +0100</pubDate>
+      <link>https://github.blog/</link>
+      <author>a19helean@iesgrancapitan.org</author>
+      <comments>https://github.blog/</comments>
+      <category>LMSGI</category>
+      <enclosure url="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.ctrl.blog%2Fentry%2Fdecentraleyes-cdn.html&amp;psig=AOvVaw05UZg1L3imUUIFqOIevPQl&amp;ust=1674751715251000&amp;source=images&amp;cd=vfe&amp;ved=0CA0QjRxqFwoTCMivqcOW4_wCFQAAAAAdAAAAABAD" length="" type="image/jpeg" />
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+        <title>Un modelo de branching con «condimentos»</title>
+        <pubDate>Wed, 21 Sep 2022 17:41:11 +0100</pubDate>
+        <link>https://blog.nicopaez.com/2022/09/21/un-modelo-de-branching-con-condimentos/</link>
+        <author>NicoPaez</author>
+        <comments>https://blog.nicopaez.com/about-me/</comments>
+        <category>LMSGI</category>
+        <enclosure url="https://nicopaez.files.wordpress.com/2022/09/branching_model-1.png" length="" type="image/png" />
+        <description><![CDATA[]]></description>
+      </item>
+  </channel>
+</rss>
+   
