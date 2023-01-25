@@ -8,7 +8,14 @@
     <language>es-es</language>
     <copyright>Copyright 2021 misitio.com</copyright>
     <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <language>es-es</language>
+    <webMaster>a19helean@iesgrancapitan.org(Andres Heras)</webMaster>
+    <copyright>Todoslosderechosreservados</copyright>
+    <image>
+      <title>Mis actualizaciones</title>
+      <link>https://q92helea.github.io/AndresHeras/</link>
+      <url>https://www.pngmart.com/files/22/GitHub-PNG-File.png</url>
+    </image>
     <item>
       <title>Git y GitHub tutorial paso a paso</title>
       <link>https://programarfacil.com/blog/arduino-blog/git-y-github/</link>
@@ -17,24 +24,29 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Artículo 2</title>
-      <link>https://www.misitio.com/articulo2</link>
-      <guid>https://www.misitio.com/articulo2</guid>
-      <description>Este es el segundo artículo de mi sitio web</description>
+      <title>Aprender Git</title>
+      <link>https://danilodellaquila.com/es/blog/aprender-git</link>
+      <guid>https://danilodellaquila.com/es/blog/aprender-git</guid>
+      <description>Primeros pasos para aprender Git</description>
       <pubDate>Mon, 25 Jan 2021 01:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Artículo 3</title>
-      <link>https://www.misitio.com/articulo3</link>
-      <guid>https://www.misitio.com/articulo3</guid>
-      <description>Este es el tercer artículo de mi sitio web</description>
+      <title>Podcast T4-E09-ManuRomero-Git Push It-Como cambiar el NLP a fuerza de código</title>
+      <link>https://saturdays.ai/2022/09/26/podcast-t4-e09-manu-romero-git-push-it/</link>
+      <guid>https://saturdays.ai/2022/09/26/podcast-t4-e09-manu-romero-git-push-it/</guid>
+      <description></description>
       <pubDate>Mon, 25 Jan 2021 02:00:00 +0000</pubDate>
+      <category>LMSGI</category>
+      <enclosure url="https://www.buzzsprout.com/1147991/11386195-t4-e09-manuromero-git-push-it-como-cambiar-el-nlp-a-fuerza-de-codigo.mp3" length="47000" type="audio/mpeg" />
+      <description><![CDATA[Podcast con entrevista a Manu Romero
+
+        En este episodio charlamos con Manu Romero (@mrm8488), uno de los investigadores independientes de NLP más prolíficos, donde además de desarrollar soluciones en Narrativa, se ha convertido en el principal contribuidor de modelos  en Hugging Face]]></description>
     </item>
     <item>
-      <title>Artículo 4</title>
-      <link>https://www.misitio.com/articulo4</link>
-      <guid>https://www.misitio.com/articulo4</guid>
-      <description>Este es el cuarto artículo de mi sitio web</description>
+      <title>Curso de Introducción a Git con Codigo Facilito</title>
+      <link>https://youtu.be/zH3I1DZNovk</link>
+      <guid>https://youtu.be/zH3I1DZNovk</guid>
+      <description>Código Facilito es una de las plataformas de aprendizaje online de programación más grandes de habla hispana.</description>
       <pubDate>Mon, 25 Jan 2021 03:00:00 +0000</pubDate>
     </item>
   </channel>
