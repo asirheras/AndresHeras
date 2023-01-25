@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introducción a Github</title>
+    <link>https://q92helea.github.io/AndresHeras/</link>
+    <atom:link href="https://q92helea.github.io/AndresHeras//rss/ejemplo.rss" rel="self" type="application/rss+xml" />
+    <description>Para empezar Git con buen pie</description>
+    <language>es-es</language>
+    <copyright>Copyright 2021 misitio.com</copyright>
+    <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Git y GitHub tutorial paso a paso</title>
+      <link>https://programarfacil.com/blog/arduino-blog/git-y-github/</link>
+      <guid>https://programarfacil.com/blog/arduino-blog/git-y-github/</guid>
+      <description>¿Qué es Git y GitHub? En este artículo vas a entender cómo utilizar Git y GitHub, la famosa red social del código basada en Git, orientada a programadores e ingenieros, aunque, me gusta aclarar que no se limita solo a este tipo de profesionales.</description>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Artículo 2</title>
+      <link>https://www.misitio.com/articulo2</link>
+      <guid>https://www.misitio.com/articulo2</guid>
+      <description>Este es el segundo artículo de mi sitio web</description>
+      <pubDate>Mon, 25 Jan 2021 01:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Artículo 3</title>
+      <link>https://www.misitio.com/articulo3</link>
+      <guid>https://www.misitio.com/articulo3</guid>
+      <description>Este es el tercer artículo de mi sitio web</description>
+      <pubDate>Mon, 25 Jan 2021 02:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Artículo 4</title>
+      <link>https://www.misitio.com/articulo4</link>
+      <guid>https://www.misitio.com/articulo4</guid>
+      <description>Este es el cuarto artículo de mi sitio web</description>
+      <pubDate>Mon, 25 Jan 2021 03:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
