@@ -36,6 +36,7 @@
       <guid>https://danilodellaquila.com/es/blog/aprender-git</guid>
       <description>Primeros pasos para aprender Git</description>
       <pubDate>Mon, 25 Jan 2021 01:00:00 +0000</pubDate>
+      <category>LMSGI</category>
     </item>
     <item>
       <title>Podcast T4-E09-ManuRomero-Git Push It-Como cambiar el NLP a fuerza de código</title>
@@ -55,10 +56,9 @@
       <guid>https://youtu.be/zH3I1DZNovk</guid>
       <description>Código Facilito es una de las plataformas de aprendizaje online de programación más grandes de habla hispana.</description>
       <!-- el siguiente enclosure funciona porque baje el archivo de YT y lo puse en mi GitHub Pages-->
-      <item>
         <media:content url="https://youtu.be/zH3I1DZNovk"
-        type="application/x-shockwave-flash" medium="video"/>
-      </item>
+        type="application/x-shockwave-flash" 
+        medium="video"/>
       <pubDate>Mon, 25 Jan 2021 03:00:00 +0000</pubDate>
     </item>
   </channel>

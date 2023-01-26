@@ -36,12 +36,13 @@
       <guid>https://danilodellaquila.com/es/blog/aprender-git</guid>
       <description>Primeros pasos para aprender Git</description>
       <pubDate>Mon, 25 Jan 2021 01:00:00 +0000</pubDate>
+      <category>LMSGI</category>
     </item>
     <item>
       <title>Podcast T4-E09-ManuRomero-Git Push It-Como cambiar el NLP a fuerza de código</title>
       <link>https://saturdays.ai/2022/09/26/podcast-t4-e09-manu-romero-git-push-it/</link>
       <guid>https://saturdays.ai/2022/09/26/podcast-t4-e09-manu-romero-git-push-it/</guid>
-      <description></description>
+      <description>Podscast de tecnologia donde se habla de Git</description>
       <pubDate>Mon, 25 Jan 2021 02:00:00 +0000</pubDate>
       <category>LMSGI</category>
       <enclosure url="https://www.buzzsprout.com/1147991/11386195-t4-e09-manuromero-git-push-it-como-cambiar-el-nlp-a-fuerza-de-codigo.mp3" length="47000" type="audio/mpeg" />
@@ -50,10 +51,14 @@
         En este episodio charlamos con Manu Romero (@mrm8488), uno de los investigadores independientes de NLP más prolíficos, donde además de desarrollar soluciones en Narrativa, se ha convertido en el principal contribuidor de modelos  en Hugging Face]]></description> -->
     </item>
     <item>
-      <title>Curso de Introducción a Git con Codigo Facilito</title>
+      <title>Curso de Introducción a Git con Codigo Facilito en YT</title>
       <link>https://youtu.be/zH3I1DZNovk</link>
       <guid>https://youtu.be/zH3I1DZNovk</guid>
       <description>Código Facilito es una de las plataformas de aprendizaje online de programación más grandes de habla hispana.</description>
+      <!-- el siguiente enclosure funciona porque baje el archivo de YT y lo puse en mi GitHub Pages-->
+        <media:content url="https://youtu.be/zH3I1DZNovk"
+        type="application/x-shockwave-flash" 
+        medium="video"/>
       <pubDate>Mon, 25 Jan 2021 03:00:00 +0000</pubDate>
     </item>
   </channel>
