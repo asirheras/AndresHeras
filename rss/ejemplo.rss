@@ -29,6 +29,7 @@
       <guid>https://programarfacil.com/blog/arduino-blog/git-y-github/</guid>
       <description>¿Qué es Git y GitHub? En este artículo vas a entender cómo utilizar Git y GitHub, la famosa red social del código basada en Git, orientada a programadores e ingenieros, aunque, me gusta aclarar que no se limita solo a este tipo de profesionales.</description>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      <category>LMSGI</category>
     </item>
     <item>
       <title>Aprender Git</title>
@@ -56,9 +57,7 @@
       <guid>https://youtu.be/zH3I1DZNovk</guid>
       <description>Código Facilito es una de las plataformas de aprendizaje online de programación más grandes de habla hispana.</description>
       <!-- el siguiente enclosure funciona porque baje el archivo de YT y lo puse en mi GitHub Pages-->
-        <media:content url="https://youtu.be/zH3I1DZNovk"
-        type="application/x-shockwave-flash" 
-        medium="video"/>
+      <enclosure url="https://youtu.be/zH3I1DZNovk" type="video/mp4" length="123456789"/>
       <pubDate>Mon, 25 Jan 2021 03:00:00 +0000</pubDate>
     </item>
   </channel>
