@@ -22,16 +22,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300&display=swap");
 
 body {
-  margin: 0em;
+  margin: 1.5em;
+  padding: 1em;
   font-family: "Roboto", sans-serif;
   font-family: "Work Sans", sans-serif;
   /*El body ocupará el 100% del viewport*/
   width: 100vw;
   height: 100vw;
 }
-
-h1{
+p{
+  margin: 20px;
+  padding: 20px;
+}
+h1,h2,h3,h4{
   padding: 50px;
+  margin: 10px;
 }
 header {
   background-color: #d6e6e8;
@@ -69,8 +74,18 @@ nav li {
   background-color: #29be09;
   color: grey;
 }
-pre {
+pre,code {
   font-family: monospace;
+  font-size: large;
+  margin: 20px;
+  padding: 20px;
+}
+img{
+  margin: 20px;
+  padding: 20px;
+}
+li{
+  margin: 3.5em;
 }
 
 footer {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
     <title>GBD - AWS</title>
 </head>
 <body>
@@ -16,7 +17,9 @@
     siguiente código</p>
 
 <code>cd /var/www/html/efs_mount</code>
+<br>
 <code>sudo nano index.html</code>
+
 <p>Y añadimos el enlace a <em>formulario.php</em>, quedando el archivo de la siguiente manera</p>
 <pre>
 
@@ -140,7 +143,7 @@ echo "Conexión exitosa";
 
 <p>Y pegamos el siguiente código</p>
 <pre>
-
+ 
     &lt;?php 
 
     phpinfo(); 
@@ -153,9 +156,7 @@ porque no tenemos PHP instalado en los servidores web. Hay que instalar PHP en t
 servidores web.</p>
 <h2>Instalando PHP</h2>
 <p>Ahora vamos a instalar PHP en todas las maquinas EC2 que funcionan como servidores.</p>
-<p>Seguiremos el tutorial de la siguiente <a href="https://arstech.net/install-php-7-on-amazon-linux-2/">página</a>. En
-    ella explica como instalar PHP7/8 en </p>
-<p>Por defecto, AWS Amazon Linux 2 instalará PHP 5.4 si se ejecuta: YUM Install PHP.Para instalar una version superior
+<p>Seguiremos el tutorial de la siguiente <a href="https://arstech.net/install-php-7-on-amazon-linux-2/">página</a>. En ella explica como instalar PHP7/8 en una EC2 con Amazon Linux, porque por defecto, AWS Amazon Linux 2 instalará PHP 5.4 si se ejecuta: YUM Install PHP.Para instalar una version superior
     de PHP sigue los siguiente pasos</p>
 
 <h3>Paso 1: instalar EXTRAS de Amazon Linux</h3>
@@ -166,6 +167,7 @@ servidores web.</p>
 <p>Comando Amazon-Linux-Extras mostrará todas las versiones PHP disponibles (y otros paquetes) que se pueden instalar
     desde el repositorio. Ejecuta:</p>
 <code>sudo yum update</code>
+<br>
 <code>sudo amazon-linux-extras | grep php</code>
 <p>Verás un resultado como este</p>
 <img src="../../../images/GBD/Nivel3/version.php.png" alt="Resultado del código anterior">
@@ -209,9 +211,9 @@ sudo amazon-linux-extras enable php8.0
             </ul>
         </ul>
            </li>
-    <li><p> CONFIGURACIÓN DE LA INSTANCIA: <strong>Clases con ráfagas (incluye clases t)</strong></p></li>
+    <li>CONFIGURACIÓN DE LA INSTANCIA: <strong>Clases con ráfagas (incluye clases t)</strong></li>
 
-    <li><p>ALMACENAMIENTO</p>
+    <li>ALMACENAMIENTO
     <ul>
         <li>Almacenamiento asignado: <strong>100GiB</strong></li>
         <li>Umbral de almacenamiento máximo: <strong>200GiB</strong></li>
@@ -254,6 +256,6 @@ Vamos a EC2 y pusalmos <span class="b-AWS"><em>Lanzar instancia</em></span> y se
 
 Le damos una <strong>IP Elástica</strong> a la máquina de Windows y nos conectamos. Vamos al panel de EC2, la seleccionamos, pulsamos <span>Conectar</span> y  vamos a la pestaña | <strong>Cliente RDP</strong> |. Para conectarse a la instancia de Windows, se puede utilizar mi apliacación de  cliente de escritorio remoto ó puede descargar uno configurado por AWS. Pulsamos sobre <strong>Descargar archivo de escritorio remoto</strong>. Abrimos el archivo que hemos descargado, y pulsamos en conectar. Nos pide una contraseña pero como el par de llaves que hemos elegido es vockey tenemos que averiguar que contraseña nos dio AWS. Para ello, vamos a Learner Lab> AWS Details >Download PEM y descargamos el archivo <em>labuser.pem</em>. Volvemos a la pestaña Cliente de RDP, y pusalmos abajo, en Obtener contraseña, subimos el archivo descargado, labuser.pem, y finalmente pulsamos abajo en <strong><span class="b-AWS">Descifrar Contraseña</span></strong></p>
 <p>
-Conocida la contraseña y podemos conectarno a la maquina EC2_Windows</p>
+Conocida la contraseña ya podemos conectarno a la maquina EC2_Windows</p>
 
 </html>
