@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBD - AWS</title>
+</head>
+<body>
+    <h2>Creando un formulario y el sistema de archivos para conectarse a una RBD</h2>
+
+<p>Vamos añadir un formulario en la página Netflix, como se ve en la imagen</p>
+<img src="../../../images/GBD/Nivel3/01Localizacionformulario.png"
+    alt="Imagen del buscador de Netflix señalando el lugar del formulario">
+<p>Para ello editaremos desde cualquier máquina conectada el Amazon EFS el index.html añadiendo en la &lt;body> el
+    siguiente código</p>
+
+<code>cd /var/www/html/efs_mount</code>
+<code>sudo nano index.html</code>
+<p>Y añadimos el enlace a <em>formulario.php</em>, quedando el archivo de la siguiente manera</p>
+<pre>
+
+&lt;!DOCTYPE html>
+    &lt;html lang="en">
+      &lt;head>
+        &lt;meta charset="UTF-8" />
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        &lt;link rel="stylesheet" href="style.css" />
+        &lt;title>Movie App&lt;/title>
+      &lt;/head>
+      &lt;body>
+        &lt;header>
+          &lt;form id="form">
+            &lt;input type="text" id="search" class="search" placeholder="Search">
+          &lt;/form>
+        &lt;/header>
+<!--NUEVA LINEA -->  
+------------------------------------------
+NUEVA LINEA: ENLACE A FORMULARIO.PHP
+------------------------------------------      
+
+    &lt;a href="formulario.php"> Donativos Siria y Turquia &lt;/a>
+        
+--------------------------------------------------------------
+&lt;main id="main">&lt;/main>
+        &lt;script src="script.js">&lt;/script>
+      &lt;/body>
+    &lt;/html>
+</pre>
+
+<p>Ahora creamos el archivo formulario.php ejecutando el siguiente comando:</p>
+<code>sudo nano formulario.php</code>
+<p>Escribimos el siguiente código en el archivo creado</p>
+<pre>
+
+&lt;html> 
+    &lt;head>
+    &lt;/head>
+    &lt;body>
+        &lt;h1> DONATIVOS PARA TURQUIA Y SIRIA &lt;/h1>
+        &lt;form action=<strong>"grabar.php"</strong> method="post">
+
+            &lt;label for="name">Nombre:&lt;/label>
+            &lt;input type="text" id="nombre" name="nombre">
+    &lt;br> 
+            &lt;label for="donativo">Donativo&lt;/label>
+            &lt;input type="donativo" id="donativo" name="donativo">
+&lt;br>
+             &lt;input type="radio" name="tipomoneda" value="euro" checked > Euro&lt;br>
+
+             &lt;input type="radio" name="tipomoneda" value="dolar"> Dolar&lt;br>
+    &lt;br>
+            &lt;input type="submit" value ="Enviar" name="enviar" /> 
+        &lt;/form>
+    &lt;/body>
+&lt;/html>
+</pre>
+
+<p>Como vemos en el documento html los datos del formulario serán grabados en el archivo <em>grabar.php</em>que
+    crearemos ahora. Ejecutamos el siguiente comando:</p>
+
+<code>sudo nano grabar.php</code>
+
+<p>Y copiamos el siguiente código:</p>
+<pre>
+    &lt;?php
+    include('<strong>conexion.php</strong>');
+    
+    $sql = "INSERT INTO donativos  VALUES (null,'" . $_REQUEST['nombre'] . "'," . $_REQUEST['donativo'] . ",'" . $_REQUEST['tipomoneda'] . "')";
+    echo $sql;
+    
+    if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "&lt;br>" . mysqli_error($conn);
+    }
+    
+    mysqli_close($conn);
+    
+    echo "&lt;h1> Donacion grabada correctamente. Gracias por su colaboracion &lt;/h1>";
+    echo "&lt;br>&lt;a href='index.html' > Volver a Inicio &lt;/a>";
+</pre>
+
+<p>Finalmente creamos el arhivo conexion.php.</p>
+
+<code>sudo nano conexion.php</code>
+
+<p>Y copiamos el siguiente código:</p>
+<pre>
+    &lt;?php
+$servername = "/*PONER AQUI EL ENDPOINT*/";
+$username = "admin";
+$password = "Root1234$";
+$bd="Cluster";/*CUIDADO CON EL NOMBRE DE LA BD*/
+// Create connection
+$conn = new  mysqli($servername, $username, $password,$bd);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Conexión falla " . $conn->connect_error);
+}
+echo "Conexión exitosa";
+?>
+</pre>
+
+<p>Ahora tendriamos en Amazon EFS los archivos:</p>
+<ul>
+    <li>Netflix.zip</li>
+    <li>index.html</li>
+    <li>style.css</li>
+    <li>script.js</li>
+    <li>formulario.php</li>
+    <li>grabar.php</li>
+    <li>conexion.php</li>
+</ul>
+
+<p>Crea ahora el archivo prueba.php</p>
+
+<code>sudo nano prueba.php</code>
+
+<p>Y pegamos el siguiente código</p>
+<pre>
+
+    &lt;?php 
+
+    phpinfo(); 
+    
+    ?>
+
+</pre>
+<p>¿Qué ocurriría si intentará escribir en el navegador https://IP.PUBLICA.EC2/prueba.php? Pues que no funcionaria
+porque no tenemos PHP instalado en los servidores web. Hay que instalar PHP en todas las máquinas EC2 que funcionan como
+servidores web.</p>
+<h2>Instalando PHP</h2>
+<p>Ahora vamos a instalar PHP en todas las maquinas EC2 que funcionan como servidores.</p>
+<p>Seguiremos el tutorial de la siguiente <a href="https://arstech.net/install-php-7-on-amazon-linux-2/">página</a>. En
+    ella explica como instalar PHP7/8 en </p>
+<p>Por defecto, AWS Amazon Linux 2 instalará PHP 5.4 si se ejecuta: YUM Install PHP.Para instalar una version superior
+    de PHP sigue los siguiente pasos</p>
+
+<h3>Paso 1: instalar EXTRAS de Amazon Linux</h3>
+<p>Asegúrese de haber instalado extras de Amazon Linux en su sistema.Ejecutar el comando:</p>
+<code>$ sudo yum install -y amazon-linux-extras</code>
+
+<h3>Paso 2: Selecciona la version de PHP</h3>
+<p>Comando Amazon-Linux-Extras mostrará todas las versiones PHP disponibles (y otros paquetes) que se pueden instalar
+    desde el repositorio. Ejecuta:</p>
+<code>sudo yum update</code>
+<code>sudo amazon-linux-extras | grep php</code>
+<p>Verás un resultado como este</p>
+<img src="../../../images/GBD/Nivel3/version.php.png" alt="Resultado del código anterior">
+<p> Ahora habilitamos php8.0: </p>
+<code>
+sudo amazon-linux-extras enable php8.0
+</code>
+<h3> Paso 3: Instale PHP 8.0</h3>
+<p> Ahora puede instalar PHP 8.0 </p> seleccionado </p>
+
+<code>sudo yum clean metadata</code>
+<br>
+<code>sudo yum install php-cli php-pdo php-fpm php-json php-mysqlnd php-gd</code>
+
+<h3> Paso 4: Verifique la versión PHP instalada </h3>
+<p> Para confirmar la versión PHP instalada ejecuta: </p>
+<code>php -v</code>
+
+
+<h2>CREACIÓN DE UN CLUSTER MULTI A-Z DE BD</h2>
+
+<p>Usaremos para la creación estándar porque nos permite definir todas las opciones de configuración, incluidas las de <strong>disponibilidad</strong>, seguridad, copias de seguridad y mantenimiento. Asi pues, vamos al panel de RDS, pulsamos sobre <em>Crear base de datos</em>, y seleccionamos los siguientes valores en la plantilla </p>
+
+<ul>Crear base de datos
+    <li>Elegir un método de creación de base de datos: <strong>Creación ESTÁNDAR</strong></li>
+    <li>OPCIONES DE MOTOR: <strong>MySQL</strong></li>
+    <li>PLANTILLAS: <strong>Producción</strong>
+        <ul>
+            <li>VERSION DEL MOTOR:<strong> MySQL 8.0.28</strong></li>
+        </ul>
+    </li>
+    <li>DISPONIBILIDAD Y DURABILIDAD: <strong>Instancia de base de datos Multi-AZ</strong>
+        <p>Crea una instancia de base de datos primaria y una instancia de base de datos en espera en una zona de disponibilidad diferente. Proporciona alta disponibilidad y redundancia de datos, pero la instancia de base de datos en espera no admite conexiones para cargas de trabajo de lectura</p>
+    </li>
+    <li>CONFIGURACIÓN:
+        <p> IDENTIFICADOR DE INSTANCIAS DE BASES DE DATOS: Cluster</p>
+        <ul>
+            <li>CONFIGURACIÓN DE CREDENCIALES</li><ul>
+                <li>Nombre de usuario maestro: <strong>admin</strong></li>
+                <li>Contraseña maestra: la de siempre</li>
+            </ul>
+        </ul>
+           </li>
+    <li><p> CONFIGURACIÓN DE LA INSTANCIA: <strong>Clases con ráfagas (incluye clases t)</strong></p></li>
+
+    <li><p>ALMACENAMIENTO</p>
+    <ul>
+        <li>Almacenamiento asignado: <strong>100GiB</strong></li>
+        <li>Umbral de almacenamiento máximo: <strong>200GiB</strong></li>
+    </ul></li>
+    <li>CONECTIVIDAD: 
+        <ul>
+        <li>Acceso público: <strong>SÍ</strong></li>
+    </ul> 
+</li>
+</ul>
+
+<p>Cuando le debemos a Aparecerá un aviso de que no puede monitorizar la BD pero si puedes administrarla.</p>
+<p>Ahora, creado el cluster de base de datos, creamos una regla de entrada por el puerto 3306 para que esté abierto solo para la comunicación entre el cluster de los servidores web con el cluster de BD, es decir, comunicación exclusiva con la ip de los nodos que funcionan como servidores web de nivel 2.
+</p>
+
+<h3>
+    Creación EC2 Windows:TODO EN LA NUBE...MÁS SEGURIDAD
+</h3>
+<p>Antes hemos administrado desde la maquina local, pero ahora vamos a crear una instancias EC Windows, que estará en el Nivel 2, donde haremos todas las tareas de administración. Todo estará en la nube para mayor seguridad.
+
+Vamos a EC2 y pusalmos <span class="b-AWS"><em>Lanzar instancia</em></span> y seleccionamos lo siguiente en la plantilla:
+<ul>
+<li>Nombre y etiquetas: <strong> EC2_Windows</strong></li>
+<li>Imagenes de apliaciones y Sistemas Operativos (AMI):<strong> Windows</strong></li>
+<li>Tipo de instancia: Windows <strong>Server 22 base (por defecto)</strong></li>
+<li>Par de claves: <strong>vockey</strong></li>
+<li>Configuraciones de red: <ul>
+    <li>Firewall: <strong>Grupo de seguridad existente</strong>
+        <p>Aqui seleccionaremos el grupo de <strong>SG_web</strong>, que modificaremos para que la maquina pueda acceder por RDP</p>
+    </li>
+</ul> </li></ul>
+
+<p>Pulsamos Lanzar instancia, y mientras se pone en marchamos vamos a Grupos de Seguridad, buscamos el grupo de seguirdad SG_web y añadimos la regla de entrada:
+    <ul>
+        <li>Protocolo:<strong> RDP</strong></li>
+        <li>Tipo:<strong> TCP</strong></li>
+        <li>Intervalos de puerto:<strong> 3389</strong></li>
+        <li>Origen:<strong> Anywhere</strong></li>
+    </ul> </p>
+
+Le damos una <strong>IP Elástica</strong> a la máquina de Windows y nos conectamos. Vamos al panel de EC2, la seleccionamos, pulsamos <span>Conectar</span> y  vamos a la pestaña | <strong>Cliente RDP</strong> |. Para conectarse a la instancia de Windows, se puede utilizar mi apliacación de  cliente de escritorio remoto ó puede descargar uno configurado por AWS. Pulsamos sobre <strong>Descargar archivo de escritorio remoto</strong>. Abrimos el archivo que hemos descargado, y pulsamos en conectar. Nos pide una contraseña pero como el par de llaves que hemos elegido es vockey tenemos que averiguar que contraseña nos dio AWS. Para ello, vamos a Learner Lab> AWS Details >Download PEM y descargamos el archivo <em>labuser.pem</em>. Volvemos a la pestaña Cliente de RDP, y pusalmos abajo, en Obtener contraseña, subimos el archivo descargado, labuser.pem, y finalmente pulsamos abajo en <strong><span class="b-AWS">Descifrar Contraseña</span></strong></p>
+<p>
+Conocida la contraseña y podemos conectarno a la maquina EC2_Windows</p>
+
+</html>
